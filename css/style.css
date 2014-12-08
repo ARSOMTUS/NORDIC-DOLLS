@@ -1,0 +1,72 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 7, 2014, 2:44:02 PM
+    Author     : Evgeny
+*/
+
+*, *:before, *:after {
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+#logo {
+    width: 100%;
+    height: auto;
+    border: 1px black solid
+}
+
+#title {
+    display: block;
+    margin-top: 15%;
+    font: 100%/5em serif;
+}
+
+.container {
+margin: 0 auto;
+//max-width: 48rem;
+width: 70%;
+}
+
+.container .cols {
+    float: left;
+    margin: 1em 0 4em 0;
+    padding: 0 1em;
+    background: bisque;
+    text-align: center;
+    border: 1px black dashed;
+}
+
+.container .cols.col-1  { width: 8.333333333333332%  }
+.container .cols.col-2  { width: 16.666666667% }
+.container .cols.col-3  { width: 25% }
+.container .cols.col-4  { width: 33.333333333% }
+.container .cols.col-5  { width: 41.666666667% }
+.container .cols.col-6  { width: 50% }
+.container .cols.col-7  { width: 58.333333333% }
+.container .cols.col-8  { width: 66.666666667% }
+.container .cols.col-9  { width: 75% }
+.container .cols.col-10 { width: 83.333333333%  }
+.container .cols.col-11 { width: 91.666666667% }
+.container .cols.col-12 { width: 100% }
+
+.container:before,
+.container:after,
+.row:after,
+.row:before,
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+ 
+ .container:after,
+ .row:after,
+ .clear:after {
+    clear: both;
+}
+ 
