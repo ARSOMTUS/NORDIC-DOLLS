@@ -9,64 +9,175 @@ and open the template in the editor.
 */
 
 *, *:before, *:after {
--moz-box-sizing: border-box;
--webkit-box-sizing: border-box;
-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-#logo {
-    width: 100%;
-    height: auto;
-    border: 1px black solid
-}
-
-#title {
-    display: block;
-    margin-top: 15%;
-    font: 100%/5em serif;
+.clearleft:after { 
+    content: "."; /* Выводим текст после элемента (точку) */
+    clear: left; /* Отменяем обтекание*/
+    visibility: hidden; /* Прячем текст */
+    display: block; /* Блочный элемент */
+    height: 0; /* Высота */
 }
 
 .container {
-margin: 0 auto;
-//max-width: 48rem;
-width: 70%;
+    position: relative;
+    margin: 10px auto;
+    width: 960px;
+    height: auto;
+//    border: 1px black solid;
 }
 
-.container .cols {
+.header-block, .enroll-block {
+    height: auto;
+}
+
+                                /*HEADER*/
+
+
+#pos-logo {
+    width: 180px;
     float: left;
-    margin: 1em 0 4em 0;
-    padding: 0 1em;
-    background: bisque;
     text-align: center;
-    border: 1px black dashed;
 }
 
-.container .cols.col-1  { width: 8.333333333333332%  }
-.container .cols.col-2  { width: 16.666666667% }
-.container .cols.col-3  { width: 25% }
-.container .cols.col-4  { width: 33.333333333% }
-.container .cols.col-5  { width: 41.666666667% }
-.container .cols.col-6  { width: 50% }
-.container .cols.col-7  { width: 58.333333333% }
-.container .cols.col-8  { width: 66.666666667% }
-.container .cols.col-9  { width: 75% }
-.container .cols.col-10 { width: 83.333333333%  }
-.container .cols.col-11 { width: 91.666666667% }
-.container .cols.col-12 { width: 100% }
+    #pos-logo > img {
+        border: 1px black solid;
+        width: 170px;
+        height: 185px;
+    }
 
-.container:before,
-.container:after,
-.row:after,
-.row:before,
-.clear:before,
-.clear:after {
-    content: " ";
-    display: table;
+#pos-title {
+    width: 780px;
+    float: left;
 }
- 
- .container:after,
- .row:after,
- .clear:after {
-    clear: both;
+
+    #pos-title > h1 {
+        margin-top: 70px;
+        text-align: center;
+    }
+
+                        /*CAROUSEL AND ENROLL FORM*/
+
+.enroll-block {
+    margin-top: 40px;
 }
- 
+
+    #pos-carousel {
+        width: 660px;
+        float: left;
+    }
+    
+        #pos-carousel > img {
+            width: 660px;
+            height: 400px;
+        }
+
+    #pos-form {
+        width: 300px;
+        height: 400px;
+        float: left;
+        background-color: #34495e;
+        padding-top: 15px;
+    }
+    
+        #name-field, #e_mail-field, #phone-field, #button-enroll {
+            width: 260px;
+            height: 40px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+        
+        #name-field, #e_mail-field, #phone-field {
+            color: #333333;
+            border: 3px solid #bdc3c7;
+            padding-left: 10px;
+        }
+        
+        #button-enroll {
+            font-size: 1.1em;
+            color: #ffffff;
+            background-color: #3498db;
+            border: none;
+        }
+        
+        #button-enroll:hover {
+            -webkit-transition: 1s;
+            -moz-transition: 1s;
+            -o-transition: 1s;
+            transition: 1s;
+            background-color: #2980b9;
+        }
+        
+        #pic-mail {
+            text-align: center;
+            padding-top: 20px;
+        }
+        
+            #pic-mail > img {
+                width: 150px;
+                height: 150px;
+            }
+            
+                        /*ABOUT TEACHER*/
+
+    .teacher-block {
+        margin-top: 40px;
+    }
+    
+        #pos-about-me {
+            width: 660px;
+            height: 400px;
+            float: left;
+        }
+        
+        #pos-card-contact {
+        width: 300px;
+        height: 400px;
+        float: left;
+        background-color: #34495e;
+        text-align: center;
+        padding-top: 15px;
+        }
+        
+            #pos-card-contact > img {
+                width: 238px;
+                height: 238px;
+                border-radius: 120px;
+                border: 2px solid #bdc3c7;
+            }
+            
+            #pos-card-contact > span {
+                font: 1em normal;
+                font-family: Geneva, Arial, Helvetica, sans-serif;
+                font-style: italic;
+                color: #ffffff;
+                background-color: #16a085;
+                margin-top: 15px;
+                padding: 4px;
+                display: block;
+                border-top: 1px #1abc9c dashed;
+                border-bottom: 1px #1abc9c dashed;
+            }
+            
+            .pos-social-butt-block {
+               margin-top: 25px;
+            }
+            
+                .pos-social-button {
+                    width: 60px;
+                    height: 60px;
+                    margin-left: 12px;
+                    float: left;
+                }
+
+                .social-button{
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 8px;
+                }
+
+            
