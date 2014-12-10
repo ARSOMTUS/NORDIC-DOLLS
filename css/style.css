@@ -8,6 +8,12 @@ and open the template in the editor.
     Author     : Evgeny
 */
 
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #557798;
+}
+
 *, *:before, *:after {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -27,7 +33,6 @@ and open the template in the editor.
     margin: 10px auto;
     width: 960px;
     height: auto;
-//    border: 1px black solid;
 }
 
 .header-block, .enroll-block {
@@ -36,33 +41,101 @@ and open the template in the editor.
 
                                 /*HEADER*/
 
-
 #pos-logo {
-    width: 180px;
+    width: 223px;
+    height: 168px;
     float: left;
     text-align: center;
 }
 
     #pos-logo > img {
-        border: 1px black solid;
-        width: 170px;
-        height: 185px;
+        margin-top: 15px;
+        width: 211px;
+        height: 148px;
     }
 
 #pos-title {
-    width: 780px;
+    border-top: 1px solid #fcf9f9;
+    width: 737px;
+    height: 168px;
     float: left;
 }
 
     #pos-title > h1 {
-        margin-top: 70px;
-        text-align: center;
+        color: #fcf9f9;
+        margin-top: 35px;
+        text-align: left;
+        padding-left: 15px;
     }
 
+                        /*ABOUT TEACHER*/
+
+    .teacher-block {
+        margin-top: 40px;
+    }
+    
+        #pos-about-me {
+            width: 660px;
+            height: 400px;
+            float: left;
+        }
+        
+            #pos-about-me > img {
+                width: 660px;
+                height: 400px;
+            }
+
+        
+        #pos-card-contact {
+        width: 300px;
+        height: 400px;
+        float: left;
+        background-color: #34495e;
+        text-align: center;
+        padding-top: 30px;
+        }
+        
+            #pos-card-contact > img {
+                width: 180px;
+                height: 180px;
+                border-radius: 120px;
+                border: 2px solid #bdc3c7;
+            }
+            
+            #pos-card-contact > span {
+                font-size: 1em;
+                color: #ffffff;
+                background-color: #16a085;
+                margin-top: 25px;
+                padding: 4px;
+                display: block;
+                border-top: 1px #1abc9c dashed;
+                border-bottom: 1px #1abc9c dashed;
+            }
+            
+            .pos-social-butt-block {
+                display: inline-block;
+                text-align: center; 
+                margin-top: 25px;
+            }
+            
+                .pos-social-button {
+                    width: 50px;
+                    height: 50px;
+                    margin-left: 8px;
+                    float: left;
+                }
+
+                .social-button{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 8px;
+                }
+    
                         /*CAROUSEL AND ENROLL FORM*/
 
 .enroll-block {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
     #pos-carousel {
@@ -122,62 +195,5 @@ and open the template in the editor.
                 height: 150px;
             }
             
-                        /*ABOUT TEACHER*/
-
-    .teacher-block {
-        margin-top: 40px;
-    }
-    
-        #pos-about-me {
-            width: 660px;
-            height: 400px;
-            float: left;
-        }
-        
-        #pos-card-contact {
-        width: 300px;
-        height: 400px;
-        float: left;
-        background-color: #34495e;
-        text-align: center;
-        padding-top: 15px;
-        }
-        
-            #pos-card-contact > img {
-                width: 238px;
-                height: 238px;
-                border-radius: 120px;
-                border: 2px solid #bdc3c7;
-            }
-            
-            #pos-card-contact > span {
-                font: 1em normal;
-                font-family: Geneva, Arial, Helvetica, sans-serif;
-                font-style: italic;
-                color: #ffffff;
-                background-color: #16a085;
-                margin-top: 15px;
-                padding: 4px;
-                display: block;
-                border-top: 1px #1abc9c dashed;
-                border-bottom: 1px #1abc9c dashed;
-            }
-            
-            .pos-social-butt-block {
-               margin-top: 25px;
-            }
-            
-                .pos-social-button {
-                    width: 60px;
-                    height: 60px;
-                    margin-left: 12px;
-                    float: left;
-                }
-
-                .social-button{
-                    width: 60px;
-                    height: 60px;
-                    border-radius: 8px;
-                }
 
             
