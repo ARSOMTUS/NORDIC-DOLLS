@@ -145,24 +145,46 @@ body {
             padding: 1px 0 1px 20px;
             color: #fcf9f9;
         }
-        .description {
-            background-color: #ffffff;
-            height: 362px;
-            padding: 20px;
+        
+    .price-cource {
+        position: absolute;
+        z-index: 1;
+        width: 114px;
+        height: auto;
+    }
+        
+        .price-cource > span {
+            font-size: 1.6em;
+            background-color: #d98282;
+            height: 38px;
+            margin: 20px 0 0 0;
+            padding: 1px 4px 1px 20px;
+            color: #f3efef;
+            display: inline-block;
         }
+        
+    .description {
+        width: 660px;
+        background-color: #ffffff;
+        border: 1px solid #16a085;
+        height: 362px;
+        padding: 10px;
+    }
         
         .description > p {
             display: block;
-            margin: 0;
+            margin: 5px 0 0 0;
             color: #17212a;
             text-align: justify;
+            text-indent: 25px;
+        }
+
+        .description > img {
+            border: 1px solid #d7dde1; 
+            width: 640px;
+            height: 342px;
         }
         
-        .first-paragraph {
-            text-indent: 20px;
-        }
-
-
     .form-enroll {
         width: 300px;
         height: 400px;
@@ -197,17 +219,18 @@ body {
             -o-transition: 1s;
             transition: 1s;
             background-color: #2980b9;
+            cursor: pointer;
         }
         
-        .pic-mail {
-            text-align: center;
-            padding: 20px 0 0 0;
-        }
+    .pic-mail {
+        text-align: center;
+        padding: 20px 0 0 0;
+    }
         
-            .pic-mail > img {
-                width: 150px;
-                height: 150px;
-            }
+        .pic-mail > img {
+            width: 150px;
+            height: 150px;
+        }
             
 
             
