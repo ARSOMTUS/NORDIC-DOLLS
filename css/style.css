@@ -10,6 +10,7 @@ and open the template in the editor.
 
 
 body {
+    font-size: 1em;
     font-family: 'Open Sans', sans-serif;
     background-color: #557798;
 }
@@ -21,11 +22,11 @@ body {
 }
 
 .clearleft:after { 
-    content: "."; /* Выводим текст после элемента (точку) */
-    clear: left; /* Отменяем обтекание*/
-    visibility: hidden; /* Прячем текст */
-    display: block; /* Блочный элемент */
-    height: 0; /* Высота */
+    content: "."; 
+    clear: left; 
+    visibility: hidden; 
+    display: block; 
+    height: 0; 
 }
 
 .container {
@@ -35,139 +36,152 @@ body {
     height: auto;
 }
 
-.header-block, .enroll-block {
+.header-block, .teacher-block, .enroll-block {
     height: auto;
 }
 
-                                /*HEADER*/
+                                /*HEADER BLOCK*/
 
-#pos-logo {
+.logo {
     width: 223px;
     height: 168px;
     float: left;
     text-align: center;
 }
 
-    #pos-logo > img {
-        margin-top: 15px;
+    .logo > img {
+        margin: 15px 0 0 0;
         width: 211px;
         height: 148px;
     }
 
-#pos-title {
+.main-title {
     border-top: 1px solid #fcf9f9;
     width: 737px;
     height: 168px;
     float: left;
 }
 
-    #pos-title > h1 {
+    .main-title > h1 {
         color: #fcf9f9;
-        margin-top: 35px;
+        margin: 35px 0 0 0;
         text-align: left;
-        padding-left: 15px;
+        padding: 0 0 0 15px;
     }
 
-                        /*ABOUT TEACHER*/
+                        /*TEACHER BLOCK*/
 
     .teacher-block {
-        margin-top: 40px;
+        margin: 40px 0 0 0;
     }
     
-        #pos-about-me {
+        .my-gallery {
             width: 660px;
             height: 400px;
             float: left;
         }
         
-            #pos-about-me > img {
+            .my-gallery > img {
                 width: 660px;
                 height: 400px;
             }
 
         
-        #pos-card-contact {
-        width: 300px;
-        height: 400px;
-        float: left;
-        background-color: #34495e;
-        text-align: center;
-        padding-top: 30px;
+        .about-me {
+            width: 300px;
+            height: 400px;
+            float: left;
+            background-color: #34495e;
+            text-align: center;
+            padding: 30px 0 0 0;
         }
         
-            #pos-card-contact > img {
+            .about-me > img {
                 width: 180px;
                 height: 180px;
                 border-radius: 120px;
                 border: 2px solid #bdc3c7;
             }
             
-            #pos-card-contact > span {
-                font-size: 1em;
+            .about-me > span {
                 color: #ffffff;
                 background-color: #16a085;
-                margin-top: 25px;
+                margin: 25px 0 0 0;
                 padding: 4px;
                 display: block;
                 border-top: 1px #1abc9c dashed;
                 border-bottom: 1px #1abc9c dashed;
             }
             
-            .pos-social-butt-block {
+            .social-btns {
                 display: inline-block;
                 text-align: center; 
-                margin-top: 25px;
+                margin: 25px 0 0 0;
             }
             
-                .pos-social-button {
-                    width: 50px;
-                    height: 50px;
-                    margin-left: 8px;
-                    float: left;
-                }
-
-                .social-button{
+                .social-btns > img{
                     width: 50px;
                     height: 50px;
                     border-radius: 8px;
+                    margin: 0 0 0 4px;
                 }
     
-                        /*CAROUSEL AND ENROLL FORM*/
+                        /*COURCE BLOCK*/
 
 .enroll-block {
-    margin-top: 20px;
+    margin: 20px 0 0 0;
 }
 
-    #pos-carousel {
+    .about-cource {
         width: 660px;
+        height: 400px;
         float: left;
     }
     
-        #pos-carousel > img {
-            width: 660px;
-            height: 400px;
+        .about-cource > h2 {
+            height: 38px;
+            background-color: #16a085;
+            margin: 0;
+            padding: 1px 0 1px 20px;
+            color: #fcf9f9;
+        }
+        .description {
+            background-color: #ffffff;
+            height: 362px;
+            padding: 20px;
+        }
+        
+        .description > p {
+            display: block;
+            margin: 0;
+            color: #17212a;
+            text-align: justify;
+        }
+        
+        .first-paragraph {
+            text-indent: 20px;
         }
 
-    #pos-form {
+
+    .form-enroll {
         width: 300px;
         height: 400px;
         float: left;
         background-color: #34495e;
-        padding-top: 15px;
+        padding: 15px 0 0 0;
     }
     
         #name-field, #e_mail-field, #phone-field, #button-enroll {
             width: 260px;
             height: 40px;
-            margin-left: 20px;
-            margin-bottom: 10px;
+            margin: 0 0 10px 20px;
             border-radius: 8px;
         }
         
         #name-field, #e_mail-field, #phone-field {
             color: #333333;
             border: 3px solid #bdc3c7;
-            padding-left: 10px;
+            padding: 0 0 0 10px;
         }
         
         #button-enroll {
@@ -185,12 +199,12 @@ body {
             background-color: #2980b9;
         }
         
-        #pic-mail {
+        .pic-mail {
             text-align: center;
-            padding-top: 20px;
+            padding: 20px 0 0 0;
         }
         
-            #pic-mail > img {
+            .pic-mail > img {
                 width: 150px;
                 height: 150px;
             }
