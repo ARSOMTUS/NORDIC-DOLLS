@@ -76,20 +76,14 @@ body {
         margin: 40px 0 0 0;
     }
     
-        .my-gallery {
+        #flavor_1 {
             width: 660px;
             height: 400px;
             float: left;
             background-color: #ffffff;
             border: 1px solid #16a085;
+            padding: 10px;
         }
-        
-            .my-gallery > img {
-                padding: 10px;
-                width: 660px;
-                height: 400px;
-            }
-
         
         .about-me {
             width: 300px;

@@ -10,25 +10,11 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/agile_css.css">
         <link rel="stylesheet" href="css/style.css">
         <script type="text/javascript" src="js/jquery/jquery.js"></script>
         <script type="text/javascript" src="js/agile_carousel.a1.1.min.js"></script>
-        <script>
-            $.getJSON("json/gallery-data.json", function (data) {
-                $(document).ready(function () {
-                    $(".my-gallery").agile_carousel({
-                        carousel_data: data,
-                        carousel_outer_height: 400,
-                        carousel_height: 400,
-                        slide_height: 400,
-                        carousel_outer_width: 660,
-                        slide_width: 660,
-                        transition_type: "fade",
-                        timer: 4000
-                    });
-                });
-            });
-        </script>
+        <script type="text/javascript" src="js/agile_carousel_script.js"></script>
     </head>
     <body>
         <div class="container">
@@ -41,9 +27,7 @@ and open the template in the editor.
                 </div>
             </div>
             <div class="teacher-block clearleft">
-                <div class="my-gallery">
-                    <!--<img src="img/doll.jpg" alt="doll">-->
-                </div>
+                <div id="flavor_1"></div> <!--agile carousel is here-->
                 <div class="about-me">
                     <img src="img/teacher.png" alt="teacher"><br>
                     <span>Кукольный мастер Ольга</span>
