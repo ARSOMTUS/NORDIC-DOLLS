@@ -9,7 +9,26 @@ and open the template in the editor.
         <title>Nordic Dolls</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>        <link rel="stylesheet" href="css/style.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/jquery/jquery.js"></script>
+        <script type="text/javascript" src="js/agile_carousel.a1.1.min.js"></script>
+        <script>
+            $.getJSON("json/gallery-data.json", function (data) {
+                $(document).ready(function () {
+                    $(".my-gallery").agile_carousel({
+                        carousel_data: data,
+                        carousel_outer_height: 400,
+                        carousel_height: 400,
+                        slide_height: 400,
+                        carousel_outer_width: 660,
+                        slide_width: 660,
+                        transition_type: "fade",
+                        timer: 4000
+                    });
+                });
+            });
+        </script>
     </head>
     <body>
         <div class="container">
@@ -23,7 +42,7 @@ and open the template in the editor.
             </div>
             <div class="teacher-block clearleft">
                 <div class="my-gallery">
-                    <img src="img/doll.jpg" alt="doll">
+                    <!--<img src="img/doll.jpg" alt="doll">-->
                 </div>
                 <div class="about-me">
                     <img src="img/teacher.png" alt="teacher"><br>
@@ -42,7 +61,12 @@ and open the template in the editor.
                     <div class="price-cource">
                         <span>9900 р.</span>
                     </div>
-                    <div class="description">
+                    <div class="description-cource">
+                        <p>
+                            Создайте куклу своими руками и подарите любимым.
+                        </p>
+                    </div>
+                    <div class="cource-gallery">
                         <img src="img/cource1.jpg" alt="cource3">
                     </div>
                 </div>
