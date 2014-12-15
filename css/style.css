@@ -129,11 +129,10 @@ body {
                     height: 50px;
                     border-radius: 8px;
                     margin: 0 0 0 4px;
-                    box-shadow: 0 8px 12px -8px #5685b3;
                 }
                 
                 .social-btns > a > img:hover {
-                    box-shadow: none;
+                    box-shadow: 0 8px 12px -8px #5685b3;
                 }
     
                         /*COURCE BLOCK*/
