@@ -117,11 +117,23 @@ body {
                 margin: 25px 0 0 0;
             }
             
-                .social-btns > img{
+                .social-btns > a {
+                    display: inline-block;
+                    width: auto;
+                    height: auto;
+                    outline: none;
+                }
+                
+                .social-btns > a > img{
                     width: 50px;
                     height: 50px;
                     border-radius: 8px;
                     margin: 0 0 0 4px;
+                    box-shadow: 0 8px 12px -8px #5685b3;
+                }
+                
+                .social-btns > a > img:hover {
+                    box-shadow: none;
                 }
     
                         /*COURCE BLOCK*/
@@ -174,7 +186,7 @@ body {
             height: 342px;
         }
         
-    .description-cource > p {
+    .short-description > span {
         position: absolute;
         font-style: italic;
         font-size: 1.2em;
@@ -236,6 +248,32 @@ body {
             width: 150px;
             height: 150px;
         }
-            
+        
+        
+                        /* MORE INFO ABOUT COURCE */    
+
+    #more-info-block {
+        background-color: #ffffff; 
+        display: none;
+    }                
+                        
+        .more-info-btn-wrap {
+            text-align: center;
+            background-color: #3498db; 
+        }
+
+            #more-info-btn {
+                margin: 6px 0 7px 0;
+                font-size: 0.9em;
+                color: #f3efef;
+                display: inline-block;
+                border-bottom: 1px dashed #fcf9f9; 
+            }
+        
+        #more-info-btn:hover {
+            cursor: pointer;
+        }
+       
+
 
             

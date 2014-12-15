@@ -10,11 +10,12 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/agile_css.css">
+        <link rel="stylesheet" href="css/carousel.css">
         <link rel="stylesheet" href="css/style.css">
         <script type="text/javascript" src="js/jquery/jquery.js"></script>
         <script type="text/javascript" src="js/agile_carousel.a1.1.min.js"></script>
-        <script type="text/javascript" src="js/agile_carousel_script.js"></script>
+        <script type="text/javascript" src="js/carousel_script.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
     </head>
     <body>
         <div class="container">
@@ -32,10 +33,18 @@ and open the template in the editor.
                     <img src="img/teacher.png" alt="teacher"><br>
                     <span>Кукольный мастер Ольга</span>
                     <div class="social-btns clearleft">
-                        <img src="img/vk_button.png" alt="vk-button">
-                        <img src="img/facebook_buttton.png" alt="facebook-button">
-                        <img src="img/tumbler_button.png" alt="tumbler-button">
-                        <img src="img/deviant_button.png" alt="deviant-button">
+                        <a href="http://vk.com/thar_mirieal">
+                            <img src="img/vk_button.png" alt="vk-button">
+                        </a>
+                        <a href="https://www.facebook.com/thar.mirieal">
+                            <img src="img/facebook_buttton.png" alt="facebook-button">
+                        </a>
+                        <a href="https://www.tumblr.com/blog/olga-lukoje">
+                            <img src="img/tumbler_button.png" alt="tumbler-button">
+                        </a>
+                        <a href="http://nordicdolls.deviantart.com">
+                            <img src="img/deviant_button.png" alt="deviant-button">
+                        </a>    
                     </div>
                 </div>
             </div>
@@ -45,10 +54,10 @@ and open the template in the editor.
                     <div class="price-cource">
                         <span>9900 р.</span>
                     </div>
-                    <div class="description-cource">
-                        <p>
+                    <div class="short-description">
+                        <span>
                             Создайте куклу своими руками и подарите любимым.
-                        </p>
+                        </span>
                     </div>
                     <div class="cource-gallery">
                         <img src="img/cource1.jpg" alt="cource3">
@@ -65,6 +74,14 @@ and open the template in the editor.
                         <img src="img/mail.png" alt="pic-mail">
                     </div>
                 </div>
+            </div>
+            <div id="more-info-block">
+                1
+            </div>
+            <div class="more-info-btn-wrap">
+                <span id="more-info-btn">
+                    Подробнее о курсе ↓
+                </span>
             </div>
         </div>
     </body>

@@ -1,5 +1,4 @@
-[{
-"content": "<img src='img/doll.jpg' alt='work1'>"
+[{"content": "<img src='img/doll.jpg' alt='work1'>"
 }, 
 {
 "content": "<img src='img/doll2.jpg' alt='work2'>"
@@ -15,5 +14,4 @@
 },
 {
 "content": "<img src='img/doll6.jpg' alt='work6'>"
-}
-]
+}]
