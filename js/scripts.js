@@ -5,25 +5,27 @@
  */
 
 window.onload = function() {        
-    function setVisibilityHandler(sourceIn, targetIn) {
-        var sourceNode = document.getElementById(sourceIn);
+    function setVisibilityHandler(sourceInFirst, sourceInSec, targetIn) {
+        var sourceNodeFirst = document.getElementById(sourceInFirst);
+        var sourceNodeSecond = document.getElementById(sourceInSec);
         var targetNode = document.getElementById(targetIn);
         var flag = false;
         var handler = function() {
             if(flag === false){
                 targetNode.style.display = 'block';
-                sourceNode.innerHTML = 'Скрыть ↑';
+                sourceNodeFirst.innerHTML = 'Скрыть ↑';
                 flag = true;
             }
             else{
                 targetNode.style.display = 'none';
-                sourceNode.innerHTML = 'Подробнее о курсе ↓';
+                sourceNodeFirst.innerHTML = 'Подробнее о курсе ↓';
                 flag = false;
             }
         };
-        sourceNode.onclick = handler;
+        sourceNodeFirst.onclick = handler;
+        sourceNodeSecond.onclick = handler;
     };
-    setVisibilityHandler('more-info-btn','more-info-block');
+    setVisibilityHandler('more-info-btn','right-btn-hide','more-info-block');
 };    
 
 

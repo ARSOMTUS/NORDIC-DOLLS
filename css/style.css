@@ -81,7 +81,6 @@ body {
             height: 400px;
             float: left;
             background-color: #ffffff;
-            border: 1px solid #16a085;
             padding: 10px;
         }
         
@@ -171,15 +170,14 @@ body {
             display: inline-block;
         }
         
-    .cource-gallery {
+    #cource-gallery {
         width: 660px;
         height: 362px;
         background-color: #ffffff;
-        border: 1px solid #16a085;
         padding: 10px;
     }
         
-        .cource-gallery > img {
+        #cource-gallery > img {
             border: 1px solid #d7dde1; 
             width: 640px;
             height: 342px;
@@ -252,6 +250,7 @@ body {
                         /* MORE INFO ABOUT COURCE */    
 
     #more-info-block {
+        margin: 20px 0 0 0;
         background-color: #ffffff; 
         display: none;
     }                
@@ -269,26 +268,51 @@ body {
                 border-bottom: 1px dashed #fcf9f9; 
             }
         
-        #more-info-btn:hover {
-            cursor: pointer;
-        }
+            #more-info-btn:hover {
+                cursor: pointer;
+            }
         
-        .more-info-text {
+        .more-info-text-block {
             margin: 30px 10px 30px 40px;
             border-right: 1px #bdc3c7 dashed; 
             width: 580px;
             height: auto;
             display: inline-block;
         }
-            .more-info-text > h3 {
+        
+            .more-info-text-block > h2 {
                 color: #34495e;
-                padding: 0 30px 20px 0;
                 margin: 0;
+                padding: 0 0 20px 0;
+            }
+            
+                .more-info-text-block > h2 > span {
+                    margin: 10px 0 0 0;
+                    display: inline-block;
+                    padding: 5px;
+                    background-color: #16a085;
+                    color: #fcf9f9;
+                    font-size: 0.8em;
+                    box-shadow: 6px 2px 4px 1px rgba(0, 0, 0, .2);
+                }
+                
+            .more-info-text-block > h3 {
+                background-color: #16a085;
+                color: #fcf9f9;
+                padding: 5px;
+                margin: 0 0 20px 0;
                 display: inline-block;
+                box-shadow: 6px 2px 4px 1px rgba(0, 0, 0, .2);
+            }
+            
+            #lesson-plan-title {
                 width: 580px;
+                color: #34495e;
+                display: inline-block;
+                text-align: center;
             }
 
-            .more-info-text > p {
+            .more-info-text-block > p {
                 font-size: 0.9em;
                 width: 580px;
                 height: auto;
@@ -296,6 +320,47 @@ body {
                 padding: 0 30px 20px 0;
                 display: inline-block;
                 text-align: justify;
+            }
+            
+                .more-info-text-block > p > span {
+                    font-weight: bold;
+                }
+            
+            .list-of-material {
+                color: #34495e;
+                font-size: 0.9em;
+                margin-top: 0; 
+            }
+            
+                .list-of-material > li > span {
+                    color: #000;
+                }
+            
+            #right-btn-hide-wrap {
+                position: relative;
+                float: right;
+                width: 62px;
+                height: auto;
+//                margin: 10px 0 0 0;
+            }    
+                
+            #right-btn-hide {
+                width: 62px;
+                height: auto;
+                background-color: #3498db;
+                color: #fcf9f9;
+                font-size: 0.9em;
+                display: inline-block;
+                text-align: center;
+                padding: 4px;
+            }
+            
+            #right-btn-hide:hover {
+                cursor: pointer;
+            }
+            
+            #right-btn-hide > span {
+                border-bottom: 1px #fcf9f9 dashed;
             }
         
         
