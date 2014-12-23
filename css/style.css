@@ -170,14 +170,14 @@ body {
             display: inline-block;
         }
         
-    #cource-gallery {
+    #photo-cource {
         width: 660px;
         height: 362px;
         background-color: #ffffff;
         padding: 10px;
     }
         
-        #cource-gallery > img {
+        #photo-cource > img {
             border: 1px solid #d7dde1; 
             width: 640px;
             height: 342px;
@@ -247,8 +247,10 @@ body {
         }
         
         
-                        /* MORE INFO ABOUT COURCE */    
-
+                        /* MORE INFO ABOUT COURCE */
+                        
+    .set-visibility {/* This is the identifying empty class for js function. */}
+                        
     #more-info-block {
         margin: 20px 0 0 0;
         background-color: #ffffff; 
@@ -260,7 +262,7 @@ body {
             background-color: #3498db; 
         }
 
-            #more-info-btn {
+            .more-info-btn {
                 margin: 6px 0 7px 0;
                 font-size: 0.9em;
                 color: #f3efef;
@@ -268,7 +270,7 @@ body {
                 border-bottom: 1px dashed #fcf9f9; 
             }
         
-            #more-info-btn:hover {
+            .more-info-btn:hover {
                 cursor: pointer;
             }
         
@@ -278,6 +280,7 @@ body {
             width: 580px;
             height: auto;
             display: inline-block;
+            float: left;
         }
         
             .more-info-text-block > h2 {
@@ -336,15 +339,9 @@ body {
                     color: #000;
                 }
             
-            #right-btn-hide-wrap {
+            .right-btn-hide {
                 position: relative;
                 float: right;
-                width: 62px;
-                height: auto;
-//                margin: 10px 0 0 0;
-            }    
-                
-            #right-btn-hide {
                 width: 62px;
                 height: auto;
                 background-color: #3498db;
@@ -353,15 +350,35 @@ body {
                 display: inline-block;
                 text-align: center;
                 padding: 4px;
-            }
-            
-            #right-btn-hide:hover {
+            }    
+                
+            .right-btn-hide:hover {
                 cursor: pointer;
             }
             
-            #right-btn-hide > span {
+            .right-btn-hide > span {
                 border-bottom: 1px #fcf9f9 dashed;
             }
+            
+            .wrap-cource-gallery {
+                height: auto;
+                width: 320px;
+                display: inline-block;
+                margin: 26px 0 0 0;
+                text-align: center;
+            }
+            
+                .gallery-cource {
+                    width: 300px;
+                    height: 184px;
+                    margin: 0 0 20px 0;
+                    border: 5px solid #d7dde1;
+                }
+                
+                .gallery-cource:hover {
+                    cursor: pointer;
+                    opacity: 0.5;
+                }
         
         
        

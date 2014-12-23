@@ -4,28 +4,36 @@
  * and open the template in the editor.
  */
 
-window.onload = function() {        
-    function setVisibilityHandler(sourceInFirst, sourceInSec, targetIn) {
-        var sourceNodeFirst = document.getElementById(sourceInFirst);
-        var sourceNodeSecond = document.getElementById(sourceInSec);
-        var targetNode = document.getElementById(targetIn);
+window.onload = function() {
+    
+    function setVisibilityHandler(classBtnsIn, blockIn) {
+        
+        var collectOfBtnsElem = document.getElementsByClassName(classBtnsIn);
+        var blockMoreInfo = document.getElementById(blockIn);
         var flag = false;
+        
         var handler = function() {
+            
             if(flag === false){
-                targetNode.style.display = 'block';
-                sourceNodeFirst.innerHTML = 'Скрыть ↑';
+                blockMoreInfo.style.display = 'block';
+                window.scrollTo(0, 1044);
+                collectOfBtnsElem[1].innerHTML = 'Скрыть ↑';
+                //collectOfBtnsElem[1] is <span class="more-info-btn> element
                 flag = true;
             }
             else{
-                targetNode.style.display = 'none';
-                sourceNodeFirst.innerHTML = 'Подробнее о курсе ↓';
+                blockMoreInfo.style.display = 'none';
+                collectOfBtnsElem[1].innerHTML = 'Подробнее о курсе ↓';
                 flag = false;
             }
         };
-        sourceNodeFirst.onclick = handler;
-        sourceNodeSecond.onclick = handler;
+        
+        for (var i = 0; i < collectOfBtnsElem.length; i++) {
+            collectOfBtnsElem[i].onclick = handler;
+        }
     };
-    setVisibilityHandler('more-info-btn','right-btn-hide','more-info-block');
+    setVisibilityHandler('set-visibility', 'more-info-block');
+    
 };    
 
 
