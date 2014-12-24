@@ -380,8 +380,20 @@ body {
                     opacity: 0.5;
                 }
         
-        
-       
+                                /* BUY DOLL */
 
-
+    .dolls-block {
+        width: 960px;
+        height: 400px;
+        background-color: #ffffff;
+        margin: 20px 0 0 0;
+    }
+    
+        .dolls-block > h2 {
+            height: 38px;
+            background-color: #16a085;
+            margin: 0;
+            padding: 1px 0 1px 20px;
+            color: #fcf9f9;
+        }
             
