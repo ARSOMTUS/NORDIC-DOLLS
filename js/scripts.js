@@ -6,10 +6,10 @@
 
 window.onload = function() {
     
-    function setVisibilityHandler(classBtnsIn, blockIn) {
+    function setVisibilityHandler() {
         
-        var collectOfBtnsElem = document.getElementsByClassName(classBtnsIn);
-        var blockMoreInfo = document.getElementById(blockIn);
+        var collectOfBtnsElem = document.getElementsByClassName('set-visibility');
+        var blockMoreInfo = document.getElementById('more-info-block');
         var flag = false;
         
         var handler = function() {
@@ -32,8 +32,46 @@ window.onload = function() {
             collectOfBtnsElem[i].onclick = handler;
         }
     };
-    setVisibilityHandler('set-visibility', 'more-info-block');
+    setVisibilityHandler();
     
+    function setShowFullPhotoHandler(){
+        
+        var collectPhotoCource = document.getElementsByClassName('gallery-cource');
+        var crossBtn = document.getElementById('btn_cross');
+        var blockDarkBackground = document.getElementsByClassName('block-dark-background');
+        var posFullPhoto = document.getElementsByClassName('pos-full-photo');
+        var currShowPhoto = document.getElementById('curr_show_photo');
+        var bodyTag = document.getElementsByTagName('body');
+        var flag = false;
+        var pageYCoord = 0;
+        
+        var handler = function() {
+            
+            if(flag === false){
+                pageYCoord = window.pageYOffset;
+                blockDarkBackground[0].style.marginTop = pageYCoord + 'px';
+                blockDarkBackground[0].style.display = 'block';
+                posFullPhoto[0].style.marginTop = pageYCoord + 250 + 'px';
+                posFullPhoto[0].style.display = 'block';
+                bodyTag[0].style.overflow = 'hidden';
+                currShowPhoto.attributes['src'].value = this.attributes['src'].value;
+                flag = true;
+            }
+            else{
+                blockDarkBackground[0].style.display = 'none';
+                posFullPhoto[0].style.display = 'none';
+                bodyTag[0].style.overflow = 'auto';
+                flag = false;
+            }
+        };
+        
+        crossBtn.onclick = handler;
+        
+        for (var i = 0; i < collectPhotoCource.length; i++) {
+            collectPhotoCource[i].onclick = handler;
+        }
+    }
+    setShowFullPhotoHandler();
 };    
 
 
