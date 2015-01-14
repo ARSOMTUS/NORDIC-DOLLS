@@ -65,13 +65,51 @@ window.onload = function() {
             }
         };
         
-        crossBtn.onclick = handler;
+            crossBtn.onclick = handler;
         
         for (var i = 0; i < collectPhotoCource.length; i++) {
             collectPhotoCource[i].onclick = handler;
         }
     }
     setShowFullPhotoHandler();
+    
+        function setMoreInfoHandler(){
+        
+        var btnMoreInfo = document.getElementsByClassName('btn-more-info');
+        var blockDarkBackground = document.getElementsByClassName('block-dark-background');
+        var bodyTag = document.getElementsByTagName('body');
+        var posMoreInfo = document.getElementsByClassName('pos-more-info');
+        var crossBtn1 = document.getElementById('btn_cross1');
+        var flag = false;
+        var pageYCoord = 0;
+        
+        var handler = function() {
+            
+            if(flag === false){
+                pageYCoord = window.pageYOffset;
+                blockDarkBackground[0].style.marginTop = pageYCoord + 'px';
+                blockDarkBackground[0].style.display = 'block';
+                posMoreInfo[0].style.marginTop = pageYCoord + 30 + 'px';
+                posMoreInfo[0].style.display = 'block';
+                bodyTag[0].style.overflow = 'hidden';
+//                currShowPhoto.attributes['src'].value = this.attributes['src'].value;
+                flag = true;
+            }
+            else{
+                blockDarkBackground[0].style.display = 'none';
+                posMoreInfo[0].style.display = 'none';
+                bodyTag[0].style.overflow = 'auto';
+                flag = false;
+            }
+        };
+        
+        crossBtn1.onclick = handler;
+        
+        for (var i = 0; i < btnMoreInfo.length; i++) {
+            btnMoreInfo[i].onclick = handler;
+        }
+    }
+    setMoreInfoHandler();
 };    
 
 
