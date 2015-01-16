@@ -29,6 +29,8 @@ body {
     display: none;
 }
 
+                            /* FULL SIZE PHOTO BLOCK */
+
 .pos-full-photo {
     position: absolute;
     z-index: 9998;
@@ -455,63 +457,65 @@ body {
             margin: 10px 0 0 0;
         }
         
-        .dolls-block > div > img {
+            .dolls-block > div > img {
+                display: block;
+                width: 210px;
+                height: 285px;
+                margin: 20px auto 0 auto;
+                padding: 0;
+                border: 5px solid #333333;
+            }
+        
+        .section-buy {
             display: block;
             width: 210px;
-            height: 285px;
-            margin: 20px 0 0 52px;
-            padding: 0;
-            border: 5px solid #333333;
+            margin: 10px auto 0 auto;
         }
         
         
+            .name-doll {
+                display: inline-block;
+                font-size: 1.2em;
+                padding: 0;
+                width: 110px;
+                color: #333333;
+            }
         
-        .name-doll {
-            display: inline-block;
-            font-size: 1.2em;
-            margin: 10px 0 0 52px;
-            padding: 0;
-            width: 110px;
-            color: #333333;
-        }
+            .cost {
+                display: inline-block;
+                padding: 2px 0 0 0;
+                width: 110px;
+                color: #333333;
+                text-align: left;
+            }
         
-        .cost {
-            display: inline-block;
-            margin: 5px 0 0 52px;
-            padding: 0;
-            width: 110px;
-            color: #333333;
-            text-align: left;
-        }
+            .btn-buy {
+                display: inline-block;
+                margin: 2px 0 0 0;
+                padding: 0 0 2px 0;
+                width: 98px;
+                height: 45px;
+                color: #333333;
+                text-align: center;
+                float: right;
+                font-size: 1.1em;
+                color: #ffffff;
+                background-color: #e67e22;
+                border: none;
+            }
         
-        .btn-buy {
-            display: inline-block;
-            margin: 16px 58px 0 0;
-            padding: 0 0 2px 0;
-            width: 98px;
-            height: 45px;
-            color: #333333;
-            text-align: center;
-            float: right;
-            
-            font-size: 1.1em;
-            color: #ffffff;
-            background-color: #e67e22;
-            border: none;
-        }
-        
-        .btn-buy:hover {
-            cursor: pointer;
-            -webkit-transition: 1s;
-            -moz-transition: 1s;
-            -o-transition: 1s;
-            transition: 1s;
-            background-color: #d35400;
-        }
+                .btn-buy:hover {
+                    cursor: pointer;
+                    -webkit-transition: 1s;
+                    -moz-transition: 1s;
+                    -o-transition: 1s;
+                    transition: 1s;
+                    background-color: #d35400;
+                }
         
         .btn-more-info {
-            display: inline-block;
-            margin: 16px 0 0 52px;
+            display: block;
+            margin: 16px auto 0 auto;
             padding: 0 0 2px 0;
             width: 210px;
             height: 35px;
@@ -523,24 +527,23 @@ body {
             border: none;
         }
         
-        .btn-more-info:hover {
-            cursor: pointer;
-            -webkit-transition: 1s;
-            -moz-transition: 1s;
-            -o-transition: 1s;
-            transition: 1s;
-            background-color: #7f8c8d;
-        }
+            .btn-more-info:hover {
+                cursor: pointer;
+                -webkit-transition: 1s;
+                -moz-transition: 1s;
+                -o-transition: 1s;
+                transition: 1s;
+                background-color: #7f8c8d;
+            }
             
-        #doll9 {
+        #div_with_border {
             border-left: 1px dashed #bdc3c7;
             border-right: 1px dashed #bdc3c7;
         }
+
         
-        #btn-buy-doll9 {
-            margin: 16px 56px 0 0;
-        }
-        
+                        /* MORE INFO ABOUT DOLL */
+
         .pos-more-info {
             position: absolute;
             z-index: 9998;
@@ -554,31 +557,8 @@ body {
             display: none;
         }
         
-        .pos-main-img {
-            position: relative;
-            display: block;
-            background-color: #ffffff;
-            width: auto;
-            height: auto;
-            margin: 40px auto 20px auto;
-        }
         
-            .pos-main-img > #curr_show_photo1 {
-                position: relative;
-                display: block;
-                margin: 0 auto;
-                padding-bottom: 20px;
-            }
-            
-            .pos-main-img > span {
-                position: relative;
-                border-bottom: #d7dde1 1px solid;
-                display: inline-block;
-                margin: 0 0 20px 95px;
-                padding: 0 0 5px 0;
-            }
-        
-        .pos-more-info > span {
+        #btn_cross1 {
             position: absolute;
             width: 33px;
             height: 33px;
@@ -592,10 +572,35 @@ body {
             z-index: 9999;
         }
     
-            .pos-more-info > span:hover {
+            #btn_cross1:hover {
                 cursor: pointer;
                 opacity: 1;
             }
+
+        .pos-main-img {
+            position: relative;
+            display: block;
+            background-color: #ffffff;
+            width: auto;
+            height: auto;
+            margin: 40px auto 0 auto;
+        }
+        
+            .pos-main-img > img {
+                position: relative;
+                display: block;
+                margin: 0 auto;
+            }
+            
+        .pos-more-info > span {
+                position: relative;
+                border-bottom: #d7dde1 1px solid;
+                display: block;
+                width: 599px;
+                text-align: center;
+                margin: 20px auto 0 auto;
+                padding: 0 0 5px 0;
+        }    
             
         .pos-block-preview {
             position: relative;
@@ -603,6 +608,7 @@ body {
             width: 684px;
             height: auto;
             text-align: center;
+            margin: 10px 0 0 0;
         }
         
             .pos-block-preview > img {
@@ -610,7 +616,6 @@ body {
                 display: inline-block;
                 width: 130px;
                 height: 87px;
-                margin: 10px 0 0 0;
                 padding: 5px;
             }
             
