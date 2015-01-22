@@ -18,23 +18,33 @@ and open the template in the editor.
         <script type="text/javascript" src="js/scripts.js"></script>
     </head>
     <body>
-        <div class="block-dark-background">&nbsp;</div>
-            <div class="pos-full-photo">
-                <img src="" alt="gallery-cource" id="curr_show_photo">
-                <span id="btn_cross">✖</span>
+        <div id="sub_layer"></div>
+            <div id="btn_close">
+                <span>✖</span>
+            </div>
+            <div id="hidden_content">1
+                <div id="full_size_photo">
+                    <img src="" alt="gallery-cource" id="curr_show_photo">
+                </div>
+                <div id="more_info_abt_doll">
+                    2
+                </div>
+                <div id="form_order">
+                    3
+                </div>
             </div>
             <div class="pos-more-info">
                 <span id="btn_cross1">✖</span>
                 <div class="pos-main-img">
-                    <img src="img/mavka/mavka3.jpg" alt="gallery-dolls" id="curr_select_photo">
+                    <img src="" alt="gallery-dolls" id="curr_select_photo">
                 </div>    
                     <span>Мавка. Шарнирочка из flumo, рост 20 см. Волосы козья шерсть.</span>
                     <div class="pos-block-preview">
-                        <img src="img/mavka/mavka1-cut.jpg" alt="gallery-dolls">
-                        <img src="img/mavka/mavka2.jpg" alt="gallery-dolls">
-                        <img src="img/mavka/mavka3-cut.jpg" alt="gallery-dolls">
-                        <img src="img/mavka/mavka4.jpg" alt="gallery-dolls">
-                        <img src="img/mavka/mavka5-cut.jpg" alt="gallery-dolls">
+                        <img src="" alt="gallery-dolls" class="img-preview">
+                        <img src="" alt="gallery-dolls" class="img-preview">
+                        <img src="" alt="gallery-dolls" class="img-preview">
+                        <img src="" alt="gallery-dolls" class="img-preview">
+                        <img src="" alt="gallery-dolls" class="img-preview">
                     </div>
             </div>
         <div class="container">
@@ -94,7 +104,7 @@ and open the template in the editor.
                     </div>
                 </div>
             </div>
-            <div id="more-info-block" class="clearleft">
+            <div id="more_info_block" class="clearleft">
                 <div class="more-info-text-block">
                     <h2>Продолжительность курса:<br>
                         <span>10 занятий по 5 часов</span>
@@ -271,55 +281,59 @@ and open the template in the editor.
                         <span>ДЗ:</span> Работа над мастер моделью.
                     </p>
                 </div>
-                <div class="right-btn-hide set-visibility">↑ <span>Скрыть</span></div>
+                <div class="hide-more-info-btn" id="right_btn_hide">↑ <span>Скрыть</span></div>
                 <div class="wrap-cource-gallery">
-                    <img src="img/cource1.jpg" alt="gallery-cource" class="gallery-cource" id="photo_1">
-                    <img src="img/cource2.jpg" alt="gallery-cource" class="gallery-cource" id="photo_2">
-                    <img src="img/cource3.jpg" alt="gallery-cource" class="gallery-cource" id="photo_3">
-                    <img src="img/cource4.jpg" alt="gallery-cource" class="gallery-cource" id="photo_4">
-                    <img src="img/cource5.jpg" alt="gallery-cource" class="gallery-cource" id="photo_5">
-                    <img src="img/cource6.jpg" alt="gallery-cource" class="gallery-cource" id="photo_6">
-                    <img src="img/cource7.jpg" alt="gallery-cource" class="gallery-cource" id="photo_7">
-                    <img src="img/cource8.jpg" alt="gallery-cource" class="gallery-cource" id="photo_8">
-                    <img src="img/cource9.jpg" alt="gallery-cource" class="gallery-cource" id="photo_9">
-                    <img src="img/cource10.jpg" alt="gallery-cource" class="gallery-cource" id="photo_10">
+                    <img src="img/cource1.jpg" alt="gallery-cource" class="gallery-cource open-in-window" id="photo_1">
+                    <img src="img/cource2.jpg" alt="gallery-cource" class="gallery-cource open-in-window" id="photo_2">
+                    <img src="img/cource3.jpg" alt="gallery-cource" class="gallery-cource open-in-window" id="photo_3">
+                    <img src="img/cource4.jpg" alt="gallery-cource" class="gallery-cource open-in-window" id="photo_4">
+                    <img src="img/cource5.jpg" alt="gallery-cource" class="gallery-cource open-in-window" id="photo_5">
+                    <img src="img/cource6.jpg" alt="gallery-cource" class="gallery-cource open-in-window" id="photo_6">
+                    <img src="img/cource7.jpg" alt="gallery-cource" class="gallery-cource open-in-window" id="photo_7">
+                    <img src="img/cource8.jpg" alt="gallery-cource" class="gallery-cource open-in-window" id="photo_8">
+                    <img src="img/cource9.jpg" alt="gallery-cource" class="gallery-cource open-in-window" id="photo_9">
+                    <img src="img/cource10.jpg" alt="gallery-cource" class="gallery-cource open-in-window" id="photo_10">
                 </div>
             </div>
             <div class="more-info-btn-wrap">
-                <span class="more-info-btn set-visibility">
+                <span class="more-info-btn-style" id="more_info_btn">
                     Подробнее о курсе ↓
+                </span>
+                <span class="more-info-btn-style hide-more-info-btn" id="hide_more_info_btn">
+                    Скрыть ↑
                 </span>
             </div>
             <div class="dolls-block">
                 <h2 class="clearleft">Куклы</h2>
                 <div>
-                    <img src="img/doll8.jpg" alt="doll8">
+                    <img src="img/mavka/mavka3.jpg" alt="doll8">
                     <div class="section-buy">
                         <span class="name-doll">Водяная</span>
                         <button class="btn-buy">Купить</button>
                         <span class="cost">10666 руб.</span>
                     </div>
-                    <button class="btn-more-info">Подробнее</button>
+                    <button class="btn-more-info open-in-window" id="mavka">Подробнее</button>
                 </div>
                 <div id="div_with_border">
-                    <img src="img/doll9.jpg" alt="doll9">
+                    <img src="img/mermaid/mermaid3.jpg" alt="doll9">
                     <div class="section-buy">
                         <span class="name-doll">Русалка</span>
                         <button class="btn-buy">Купить</button>
                         <span class="cost">9999 руб.</span>
                     </div>    
-                    <button class="btn-more-info">Подробнее</button>
+                    <button class="btn-more-info open-in-window" id="mermaid">Подробнее</button>
                 </div>
                 <div>
-                    <img src="img/doll10.jpg" alt="doll10">
+                    <img src="img/fenrir/fenrir1.jpg" alt="doll10">
                         <div class="section-buy">
                             <span class="name-doll">Фенрир</span>
                             <button class="btn-buy">Купить</button>
                             <span class="cost">7777 руб.</span>
                         </div>    
-                    <button class="btn-more-info">Подробнее</button>
+                    <button class="btn-more-info open-in-window" id="fenrir">Подробнее</button>
                 </div>
             </div>
+            <button id="btn_test">Test</button>
         </div>
     </body>
 </html>
