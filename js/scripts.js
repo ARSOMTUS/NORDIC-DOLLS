@@ -8,59 +8,162 @@ window.onload = function() {
     
 //        var btnTestObj = document.getElementById('btn_test');
 //        
-//        var hiddenContentObj = document.getElementById('hidden_content');
+//        var hiddenContentObjObj = document.getElementById('hidden_content');
 //        
 //        var fullSizePhotoObj = document.getElementById('full_size_photo');
 //        var moreInfoAbtDollObj = document.getElementById('more_info_abt_doll');
 //        var formOrderObj = document.getElementById('form_order');
         
 //        var handler = function(){
-//            hiddenContentObj.style.display = 'block';
+//            hiddenContentObjObj.style.display = 'block';
 //        };
 //        
 //        btnTestObj.onclick = handler;
 
-    var subLayer = document.getElementById('sub_layer');
-    var blockMoreInfo = document.getElementById('more_info_block');
-    var btnMoreInfo = document.getElementById('more_info_btn');
-    var btnsHideMoreInfo = document.getElementsByClassName('hide-more-info-btn');
-    var btnChanged = false;
+    var subLayerObj = document.getElementById('sub_layer');
+    var blockMoreInfoObj = document.getElementById('more_info_block');
+    var btnMoreInfoObj = document.getElementById('more_info_btn');
+    var btnsHideMoreInfoObj = document.getElementsByClassName('hide-more-info-btn');
+    var currShowPhotoObj = document.getElementById('curr_show_photo');
+    var hiddenContentObj = document.getElementById('hidden_content');
+    var btnCloseObj = document.getElementById('btn_close');
+    var showHiddenBlockObj = document.getElementsByClassName('show-hidden-block');
+    var fullSizePhotoObj = document.getElementById('full_size_photo');
+    var moreInfoAbtDoll = document.getElementById('more_info_abt_doll');
+    var btnChangedObj = false;
 
     function showSubLayer(){
-        subLayer.style.display = 'block';
+        subLayerObj.style.display = 'block';
     };
     
-    function hideSubLayer(){
-        subLayer.style.display = 'none';
+    function hideSubLayer(){ 
+        subLayerObj.style.display = 'none';
     }
     
-    var showMoreInfo = function(){ //Display block more info about course.
-        blockMoreInfo.style.display = 'block';
-        changeBtnMoreInfo();
+    var showHiddenBlock = function(){
+        
+        showSubLayer();
+        showBtnClose();
+        hiddenContentObj.style.display = 'block';
+        
     };
-    btnMoreInfo.onclick = showMoreInfo;
+    
+    function hideHiddenBlock(){
+        hiddenContentObj.style.display = 'none';
+    }
+    
+    var checkClassActiveElem = function(){
+        
+        /* NOT WORK! */
+        
+        switch(this.attributes['class'].value){
+            case 'gallery-cource show-hidden-block':
+                showBlockFullSizePhoto();
+                break;
+            case 'btn-more-info show-hidden-block':
+                showMoreInfoAbtDoll();
+                break;
+        }
+        
+    };
+    for (var i = 0; i < showHiddenBlockObj.length; i++) {
+        
+        showHiddenBlockObj[i].onclick = showHiddenBlock;
+        showHiddenBlockObj[i].onclick = checkClassActiveElem;
+        
+    }
+    
+    function showBlockFullSizePhoto(){
+        
+        showSubLayer();
+        showHiddenBlock();
+        showBtnClose();
+        fullSizePhotoObj.style.display = 'block';
+        openSelectedPhoto();
+        
+    }
+    
+    function openSelectedPhoto(){
+        alert(this.attributes['src'].value);
+//        currShowPhotoObj.attributes['src'].value = this.attributes['src'].value;
+    }
+    
+    
+    function showMoreInfoAbtDoll(){
+        
+        showSubLayer();
+        showHiddenBlock();
+        showBtnClose();
+        moreInfoAbtDoll.style.display = 'block';
+        
+    }
+    
+    
+    var showMoreInfo = function(){ //Display block more info about course.
+        
+        blockMoreInfoObj.style.display = 'block';
+        changeBtnMoreInfo();
+        
+    };
+    btnMoreInfoObj.onclick = showMoreInfo;
     
     var hideMoreInfo = function(){
-        blockMoreInfo.style.display = 'none';
+        
+        blockMoreInfoObj.style.display = 'none';
         changeBtnMoreInfo();
+        
     };
-    for (var i = 0; i < btnsHideMoreInfo.length; i++) {
-        btnsHideMoreInfo[i].onclick = hideMoreInfo;
+    for (var i = 0; i < btnsHideMoreInfoObj.length; i++) {
+        btnsHideMoreInfoObj[i].onclick = hideMoreInfo;
     }
     
     function changeBtnMoreInfo(){
         
-        if(btnChanged === false){
-            btnMoreInfo.style.display = 'none';
-            btnsHideMoreInfo[1].style.display = 'inline-block';//Change bottom button.
-            btnChanged = true;
+        if(btnChangedObj === false){
+            btnMoreInfoObj.style.display = 'none';
+            btnsHideMoreInfoObj[1].style.display = 'inline-block';//Change bottom button.
+            btnChangedObj = true;
         }
         else{
-            btnsHideMoreInfo[1].style.display = 'none';
-            btnMoreInfo.style.display = 'inline-block';
-            btnChanged = false;
+            btnsHideMoreInfoObj[1].style.display = 'none';
+            btnMoreInfoObj.style.display = 'inline-block';
+            btnChangedObj = false;
         }
+        
     }
+    
+    var closeWindow = function(){
+        
+        hideHiddenBlock();
+        hideBtnClose();
+        hideSubLayer();
+        
+    };
+    subLayerObj.onclick = closeWindow;
+    btnCloseObj.onclick = closeWindow;
+    
+    var subLayerObjHover = function(){
+        
+        subLayerObj.style.cursor = 'pointer';
+        btnCloseObj.style.opacity = '1';
+        
+    };
+    subLayerObj.onmouseover = subLayerObjHover;
+    
+    var subLayerObjOut = function(){
+        btnCloseObj.style.opacity = '0.5';
+    };
+    subLayerObj.onmouseout = subLayerObjOut;
+    
+    function showBtnClose(){
+        btnCloseObj.style.display = 'inline-block';
+    }
+    
+    function hideBtnClose(){
+        btnCloseObj.style.display = 'none';
+    }
+    
+    
     
     
     
@@ -72,18 +175,18 @@ window.onload = function() {
 //    function setVisibilityHandler() {
 //        
 //        var collectOfBtnsElem = document.getElementsByClassName('set-visibility');
-//        var blockMoreInfo = document.getElementById('more-info-block');
+//        var blockMoreInfoObj = document.getElementById('more-info-block');
 //        var flag = false;
 //        
 //        var handler = function() {
 //            
 //            if(flag === false){
-//                blockMoreInfo.style.display = 'block';
+//                blockMoreInfoObj.style.display = 'block';
 //                window.scrollTo(0, 1044);
 //                flag = true;
 //            }
 //            else{
-//                blockMoreInfo.style.display = 'none';
+//                blockMoreInfoObj.style.display = 'none';
 //                flag = false;
 //            }
 //        };
@@ -100,7 +203,7 @@ window.onload = function() {
 //        var crossBtn = document.getElementById('btn_cross');
 //        var blockDarkBackground = document.getElementsByClassName('block-dark-background');
 //        var posFullPhoto = document.getElementsByClassName('pos-full-photo');
-//        var currShowPhoto = document.getElementById('curr_show_photo');
+//        var currShowPhotoObj = document.getElementById('curr_show_photo');
 //        var bodyTag = document.getElementsByTagName('body');
 //        var flag = false;
 //        var pageYCoord = 0;
@@ -114,7 +217,7 @@ window.onload = function() {
 //                posFullPhoto[0].style.marginTop = pageYCoord + 250 + 'px';
 //                posFullPhoto[0].style.display = 'block';
 ////                bodyTag[0].style.overflow = 'hidden';
-//                currShowPhoto.attributes['src'].value = this.attributes['src'].value;
+//                currShowPhotoObj.attributes['src'].value = this.attributes['src'].value;
 //                flag = true;
 //            }
 //            else{
@@ -174,7 +277,7 @@ window.onload = function() {
 //            'img/fenrir/fenrir4-cut.jpg',
 //            'img/fenrir/fenrir5-cut.jpg'];
 //
-//        var btnMoreInfo = document.getElementsByClassName('btn-more-info');
+//        var btnMoreInfoObj = document.getElementsByClassName('btn-more-info');
 //        var blockDarkBackground = document.getElementsByClassName('block-dark-background');
 //        var bodyTag = document.getElementsByTagName('body');
 //        var posMoreInfo = document.getElementsByClassName('pos-more-info');
@@ -240,8 +343,8 @@ window.onload = function() {
 //        
 //        crossBtn1.onclick = handler;
 //        
-//        for (var i = 0; i < btnMoreInfo.length; i++) {
-//            btnMoreInfo[i].onclick = handler;
+//        for (var i = 0; i < btnMoreInfoObj.length; i++) {
+//            btnMoreInfoObj[i].onclick = handler;
 //        }
 //        
 //
