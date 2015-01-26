@@ -324,13 +324,9 @@ body {
                 border-bottom: 1px dashed #fcf9f9; 
             }
         
-            .more-info-btn-style:hover {
-                cursor: pointer;
-            }
-            
-            #hide_more_info_btn {
-                display: none;
-            }
+                .more-info-btn-style:hover {
+                    cursor: pointer;
+                }
         
         .more-info-text-block {
             margin: 30px 10px 30px 40px;
@@ -653,7 +649,7 @@ body {
     #full_size_photo {
         position: relative;
         width: 654px; 
-        height: 470px; 
+        height: 440px; 
         overflow: hidden;
         display: none;
     }

@@ -21,16 +21,80 @@ window.onload = function() {
 //        btnTestObj.onclick = handler;
 
     var subLayerObj = document.getElementById('sub_layer');
-    var blockMoreInfoObj = document.getElementById('more_info_block');
-    var btnMoreInfoObj = document.getElementById('more_info_btn');
+    var showHiddenBlockObj = document.getElementsByClassName('show-hidden-block');
+//    var blockMoreInfoObj = document.getElementById('more_info_block');
+//    var btnMoreInfoObj = document.getElementById('more_info_btn');
     var btnsHideMoreInfoObj = document.getElementsByClassName('hide-more-info-btn');
     var currShowPhotoObj = document.getElementById('curr_show_photo');
     var hiddenContentObj = document.getElementById('hidden_content');
     var btnCloseObj = document.getElementById('btn_close');
-    var showHiddenBlockObj = document.getElementsByClassName('show-hidden-block');
     var fullSizePhotoObj = document.getElementById('full_size_photo');
     var moreInfoAbtDoll = document.getElementById('more_info_abt_doll');
     var btnChangedObj = false;
+    var classClickedElemObj;
+    var clickedElemObj;
+
+    function setHandlers(){
+        
+        var btnMoreInfo = document.getElementById('more_info_btn');
+        var blockMoreInfo = document.getElementById('more_info_block');
+        var btnsHideMoreInfo = document.getElementsByClassName('hide-more-info-btn');
+        var btnChanged = false;
+
+        var showMoreInfo = function(){
+            blockMoreInfo.style.display = 'block';
+        };
+        
+        var hideMoreInfo = function(){
+            blockMoreInfo.style.display = 'none';
+        };
+        
+        var changeBtnMoreInfo = function(){
+            
+            if(btnChanged === false){
+                
+                btnMoreInfo.innerHTML = 'Скрыть ↑';
+                btnMoreInfo.attributes['class'].value = 
+                    btnMoreInfo.attributes['class'].value + ' hide-more-info-btn';
+                
+                for (var i = 0; i < btnsHideMoreInfo.length; i++) {
+
+                    btnsHideMoreInfo[i].addEventListener('click', hideMoreInfo);
+                    btnsHideMoreInfo[i].addEventListener('click', changeBtnMoreInfo);
+
+                }
+                
+                btnChanged = true;
+                
+            }
+            else{
+                
+                btnMoreInfo.innerHTML = 'Подробнее о курсе ↓';
+                
+
+                btnMoreInfo.attributes['class'].value = 'more-info-btn-style';
+                
+                for (var i = 0; i < btnsHideMoreInfo.length; i++) {
+
+                    btnsHideMoreInfo[i].addEventListener('click', showMoreInfo);
+
+                }
+                
+                btnChanged = false;
+                
+            }
+        
+        };
+        btnMoreInfo.addEventListener('click', showMoreInfo);
+        btnMoreInfo.addEventListener('click', changeBtnMoreInfo);
+        
+    
+    }setHandlers();
+    
+        var showSubLayer = function(){
+            subLayerObj.style.display = 'block';
+        };
+        
 
     function showSubLayer(){
         subLayerObj.style.display = 'block';
@@ -54,13 +118,14 @@ window.onload = function() {
     
     var checkClassActiveElem = function(){
         
-        /* NOT WORK! */
-        
-        switch(this.attributes['class'].value){
-            case 'gallery-cource show-hidden-block':
+        clickedElemObj = this;
+        classClickedElemObj = clickedElemObj.attributes['class'].value;
+        classClickedElemObj = classClickedElemObj.split(' ')[0];
+        switch(classClickedElemObj){
+            case 'gallery-cource':
                 showBlockFullSizePhoto();
                 break;
-            case 'btn-more-info show-hidden-block':
+            case 'btn-more-info':
                 showMoreInfoAbtDoll();
                 break;
         }
@@ -83,9 +148,13 @@ window.onload = function() {
         
     }
     
+    function hideBlockFullSizePhoto(){
+        fullSizePhotoObj.style.display = 'none';
+    }
+    
     function openSelectedPhoto(){
-        alert(this.attributes['src'].value);
-//        currShowPhotoObj.attributes['src'].value = this.attributes['src'].value;
+//        alert(clickedElemObj.attributes['src'].value);
+        currShowPhotoObj.attributes['src'].value = clickedElemObj.attributes['src'].value;
     }
     
     
@@ -98,45 +167,57 @@ window.onload = function() {
         
     }
     
-    
-    var showMoreInfo = function(){ //Display block more info about course.
-        
-        blockMoreInfoObj.style.display = 'block';
-        changeBtnMoreInfo();
-        
-    };
-    btnMoreInfoObj.onclick = showMoreInfo;
-    
-    var hideMoreInfo = function(){
-        
-        blockMoreInfoObj.style.display = 'none';
-        changeBtnMoreInfo();
-        
-    };
-    for (var i = 0; i < btnsHideMoreInfoObj.length; i++) {
-        btnsHideMoreInfoObj[i].onclick = hideMoreInfo;
+    function hideMoreInfoAbtDoll(){
+        moreInfoAbtDoll.style.display = 'none';
     }
     
-    function changeBtnMoreInfo(){
-        
-        if(btnChangedObj === false){
-            btnMoreInfoObj.style.display = 'none';
-            btnsHideMoreInfoObj[1].style.display = 'inline-block';//Change bottom button.
-            btnChangedObj = true;
-        }
-        else{
-            btnsHideMoreInfoObj[1].style.display = 'none';
-            btnMoreInfoObj.style.display = 'inline-block';
-            btnChangedObj = false;
-        }
-        
-    }
+////    var showMoreInfo = function(){ //Display block more info about course.
+////        
+////        blockMoreInfoObj.style.display = 'block';
+////        changeBtnMoreInfo();
+////        
+////    };
+////    btnMoreInfoObj.onclick = showMoreInfo;
+////    
+////    var hideMoreInfo = function(){
+////        
+////        blockMoreInfoObj.style.display = 'none';
+////        changeBtnMoreInfo();
+////        
+////    };
+//    for (var i = 0; i < btnsHideMoreInfoObj.length; i++) {
+//        btnsHideMoreInfoObj[i].onclick = hideMoreInfo;
+//    }
+//    
+//    function changeBtnMoreInfo(){
+//        
+//        if(btnChangedObj === false){
+//            btnMoreInfoObj.style.display = 'none';
+//            btnsHideMoreInfoObj[1].style.display = 'inline-block';//Change bottom button.
+//            btnChangedObj = true;
+//        }
+//        else{
+//            btnsHideMoreInfoObj[1].style.display = 'none';
+//            btnMoreInfoObj.style.display = 'inline-block';
+//            btnChangedObj = false;
+//        }
+//        
+//    }
     
     var closeWindow = function(){
         
         hideHiddenBlock();
         hideBtnClose();
         hideSubLayer();
+        
+        switch(classClickedElemObj){
+            case 'gallery-cource':
+                hideBlockFullSizePhoto();
+                break;
+            case 'btn-more-info':
+                hideMoreInfoAbtDoll();
+                break;
+        }
         
     };
     subLayerObj.onclick = closeWindow;
