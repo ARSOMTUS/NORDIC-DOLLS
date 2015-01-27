@@ -327,6 +327,10 @@ body {
                 .more-info-btn-style:hover {
                     cursor: pointer;
                 }
+                
+                #hide_more_info_btn {
+                    display:none;
+                }
         
         .more-info-text-block {
             margin: 30px 10px 30px 40px;

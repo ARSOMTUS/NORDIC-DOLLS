@@ -36,7 +36,11 @@ window.onload = function() {
 
     function setHandlers(){
         
+        /* HANDLERS FOR SHOW OR HIDE BLOCK MORE INFO ABOUT COURCE  */
+        
         var btnMoreInfo = document.getElementById('more_info_btn');
+        var btnsHideMoreInfo = document.getElementsByClassName('hide-more-info-btn');
+        var btnHideMoreInfo = document.getElementById('hide_more_info_btn');
         var blockMoreInfo = document.getElementById('more_info_block');
         var btnsHideMoreInfo = document.getElementsByClassName('hide-more-info-btn');
         var btnChanged = false;
@@ -53,42 +57,34 @@ window.onload = function() {
             
             if(btnChanged === false){
                 
-                btnMoreInfo.innerHTML = 'Скрыть ↑';
-                btnMoreInfo.attributes['class'].value = 
-                    btnMoreInfo.attributes['class'].value + ' hide-more-info-btn';
-                
-                for (var i = 0; i < btnsHideMoreInfo.length; i++) {
-
-                    btnsHideMoreInfo[i].addEventListener('click', hideMoreInfo);
-                    btnsHideMoreInfo[i].addEventListener('click', changeBtnMoreInfo);
-
-                }
+                btnMoreInfo.style.display = 'none';
+                btnHideMoreInfo.style.display = 'inline-block';
                 
                 btnChanged = true;
                 
             }
             else{
                 
-                btnMoreInfo.innerHTML = 'Подробнее о курсе ↓';
-                
-
-                btnMoreInfo.attributes['class'].value = 'more-info-btn-style';
-                
-                for (var i = 0; i < btnsHideMoreInfo.length; i++) {
-
-                    btnsHideMoreInfo[i].addEventListener('click', showMoreInfo);
-
-                }
+                btnMoreInfo.style.display = 'inline-block';
+                btnHideMoreInfo.style.display = 'none';
                 
                 btnChanged = false;
                 
             }
         
         };
+        for (var i = 0; i < btnsHideMoreInfo.length; i++) {
+        
+            btnsHideMoreInfo[i].addEventListener('click', hideMoreInfo);
+            btnsHideMoreInfo[i].addEventListener('click', changeBtnMoreInfo);
+        
+        }
+        
         btnMoreInfo.addEventListener('click', showMoreInfo);
         btnMoreInfo.addEventListener('click', changeBtnMoreInfo);
         
-    
+                                /* END */
+        
     }setHandlers();
     
         var showSubLayer = function(){
