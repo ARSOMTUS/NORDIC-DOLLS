@@ -252,7 +252,7 @@ background-image: url(../images/sprite_ac_hover.png);
 overflow: hidden;
 -moz-box-shadow: 0px 0px 4px #dfdfdf; /* FF3.5+ */
 -webkit-box-shadow: 0px 0px 0px #dfdfdf; /* Saf3.0+, Chrome */
-box-shadow: 0px 0px 4px #dfdfdf; /* Opera 10.5, IE9, Chrome 10+ */
+/*box-shadow: 0px 0px 4px #dfdfdf;  Opera 10.5, IE9, Chrome 10+ */
 }
 /*-- hide the captions --*/
 #flavor_1 .caption {

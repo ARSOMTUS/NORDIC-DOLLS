@@ -12,7 +12,7 @@ and open the template in the editor.
 body {
     font-size: 1em;
     font-family: 'Open Sans', sans-serif;
-    background-color: #557798;
+    background-color: #eaeff0;
     margin: 0;
     overflow: auto;
 }
@@ -85,8 +85,9 @@ body {
 
 .container {
     position: relative;
+/*    background-color: #f7e59e;*/
     margin: 0 auto;
-    padding: 10px 0 10px 0;
+    padding: 0 0 10px 0;
     width: 960px;
     height: auto;
     display: block;
@@ -103,7 +104,7 @@ body {
     height: 168px;
     float: left;
     text-align: center;
-    
+    background-color: #ffffff;
 }
 
     .logo > img {
@@ -113,15 +114,15 @@ body {
     }
 
 .main-title {
-    border-top: 1px solid #fcf9f9;
     width: 737px;
     height: 168px;
     float: left;
+    background-color: #333333;
 }
 
     .main-title > h1 {
-        color: #fcf9f9;
-        margin: 35px 0 0 0;
+        color: #ffffff;
+        margin: 68px 0 0 0;
         text-align: left;
         padding: 0 0 0 15px;
     }
@@ -136,7 +137,7 @@ body {
             width: 660px;
             height: 400px;
             float: left;
-            background-color: #ffffff;
+            background-color: #333333;
             padding: 10px;
         }
         
@@ -144,7 +145,7 @@ body {
             width: 300px;
             height: 400px;
             float: left;
-            background-color: #34495e;
+            background-color: #ffffff;
             text-align: center;
             padding: 30px 0 0 0;
         }
@@ -157,19 +158,17 @@ body {
             }
             
             .about-me > span {
-                color: #ffffff;
-                background-color: #16a085;
-                margin: 25px 0 0 0;
+                color: #333333;
+                font-style: italic;
+                margin: 2px 0 0 0;
                 padding: 4px;
                 display: block;
-                border-top: 1px #1abc9c dashed;
-                border-bottom: 1px #1abc9c dashed;
             }
             
             .social-btns {
                 display: inline-block;
                 text-align: center; 
-                margin: 25px 0 0 0;
+                margin: 48px 0 0 0;
             }
             
                 .social-btns > a {
@@ -182,29 +181,34 @@ body {
                 .social-btns > a > img{
                     width: 50px;
                     height: 50px;
-                    border-radius: 8px;
                     margin: 0 0 0 4px;
                 }
                 
                 .social-btns > a > img:hover {
-                    box-shadow: 0 8px 12px -8px #5685b3;
+                    -webkit-transition: 1s;
+                    -moz-transition: 1s;
+                    -o-transition: 1s;
+                    transition: 1s;
+                    opacity: 0.5;
+                    cursor: pointer;
                 }
     
                         /*COURCE BLOCK*/
 
 .enroll-block {
     margin: 20px 0 0 0;
+    background-color: #ffffff;
 }
 
     .about-cource {
-        width: 660px;
-        height: 400px;
+        width: 960px;
+        height: 430px;
         float: left;
     }
     
         .about-cource > h2 {
             height: 38px;
-            background-color: #16a085;
+            background-color: #333333;
             margin: 0;
             padding: 1px 0 1px 20px;
             color: #fcf9f9;
@@ -218,9 +222,9 @@ body {
         
         .price-cource > span {
             font-size: 1.6em;
-            background-color: #d98282;
+            background-color: #e67e22;
             height: 38px;
-            margin: 20px 0 0 0;
+            margin: 40px 0 0 0;
             padding: 1px 4px 1px 20px;
             color: #f3efef;
             display: inline-block;
@@ -229,12 +233,14 @@ body {
     #photo-cource {
         width: 660px;
         height: 362px;
+        float: left;
         background-color: #ffffff;
-        padding: 10px;
+        padding: 15px 0 0 0;
+        margin: 15px 0 15px 0;
     }
         
         #photo-cource > img {
-            border: 1px solid #d7dde1; 
+            border: 5px solid #333333; 
             width: 640px;
             height: 342px;
         }
@@ -244,8 +250,8 @@ body {
         font-style: italic;
         font-size: 1.2em;
         display: inline-block;
-        background-color: #d98282;
-        margin: 75px 0 0 0;
+        background-color: #e67e22;
+        margin: 90px 0 0 0;
         padding: 8px;
         width: 170px; 
         height: 120px;
@@ -257,30 +263,32 @@ body {
     
     .form-enroll {
         width: 300px;
-        height: 400px;
+        height: 362px;
         float: left;
-        background-color: #34495e;
+        background-color: #ffffff;
         padding: 15px 0 0 0;
+        margin: 15px 0 15px 0;
+        border-left: #bdc3c7 1px dashed; 
     }
     
         #name-field, #e_mail-field, #phone-field, #button-enroll {
             width: 260px;
             height: 40px;
             margin: 0 0 10px 20px;
-            border-radius: 8px;
         }
         
         #name-field, #e_mail-field, #phone-field {
             color: #333333;
-            border: 3px solid #bdc3c7;
+            border: #bdc3c7 2px solid;
             padding: 0 0 0 10px;
         }
         
         #button-enroll {
             font-size: 1.1em;
             color: #ffffff;
-            background-color: #3498db;
+            background-color: #e67e22;
             border: none;
+            margin-top: 25px;
         }
         
         #button-enroll:hover {
@@ -288,7 +296,7 @@ body {
             -moz-transition: 1s;
             -o-transition: 1s;
             transition: 1s;
-            background-color: #2980b9;
+            opacity: 0.5;
             cursor: pointer;
         }
         
@@ -298,8 +306,8 @@ body {
     }
         
         .pic-mail > img {
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
         }
         
         
@@ -313,15 +321,15 @@ body {
                         
         .more-info-btn-wrap {
             text-align: center;
-            background-color: #3498db; 
+            background-color: #95a5a6; 
         }
 
             .more-info-btn-style {
                 margin: 6px 0 7px 0;
                 font-size: 0.9em;
-                color: #f3efef;
+                color: #ffffff;
                 display: inline-block;
-                border-bottom: 1px dashed #fcf9f9; 
+                border-bottom: 1px dashed #ffffff; 
             }
         
                 .more-info-btn-style:hover {
@@ -342,7 +350,7 @@ body {
         }
         
             .more-info-text-block > h2 {
-                color: #34495e;
+                color: #333333;
                 margin: 0;
                 padding: 0 0 20px 0;
             }
@@ -351,24 +359,24 @@ body {
                     margin: 10px 0 0 0;
                     display: inline-block;
                     padding: 5px;
-                    background-color: #16a085;
+                    background-color: #e67e22;
                     color: #fcf9f9;
                     font-size: 0.8em;
-                    box-shadow: 6px 2px 4px 1px rgba(0, 0, 0, .2);
+/*                    box-shadow: 6px 2px 4px 1px rgba(0, 0, 0, .2);*/
                 }
                 
             .more-info-text-block > h3 {
-                background-color: #16a085;
+                background-color: #e67e22;
                 color: #fcf9f9;
                 padding: 5px;
                 margin: 0 0 20px 0;
                 display: inline-block;
-                box-shadow: 6px 2px 4px 1px rgba(0, 0, 0, .2);
+/*                box-shadow: 6px 2px 4px 1px rgba(0, 0, 0, .2);*/
             }
             
             #lesson-plan-title {
                 width: 580px;
-                color: #34495e;
+                color: #333333;
                 display: inline-block;
                 text-align: center;
             }
@@ -388,7 +396,7 @@ body {
                 }
             
             .list-of-material {
-                color: #34495e;
+                color: #333333;
                 font-size: 0.9em;
                 margin-top: 0; 
             }
@@ -402,8 +410,8 @@ body {
                 float: right;
                 width: 62px;
                 height: auto;
-                background-color: #3498db;
-                color: #fcf9f9;
+                background-color: #95a5a6;
+                color: #ffffff;
                 font-size: 0.9em;
                 display: inline-block;
                 text-align: center;
@@ -415,7 +423,7 @@ body {
             }
             
             #right_btn_hide > span {
-                border-bottom: 1px #fcf9f9 dashed;
+                border-bottom: 1px #ffffff dashed;
             }
             
             .wrap-cource-gallery {
@@ -449,7 +457,7 @@ body {
     
         .dolls-block > h2 {
             height: 38px;
-            background-color: #16a085;
+            background-color: #333333;
             margin: 0;
             padding: 1px 0 1px 20px;
             color: #fcf9f9;
@@ -523,9 +531,7 @@ body {
             padding: 0 0 2px 0;
             width: 210px;
             height: 35px;
-            color: #333333;
             text-align: center;
-            
             color: #ffffff;
             background-color: #95a5a6;
             border: none;
@@ -560,9 +566,6 @@ body {
             overflow: hidden;
             display: none;
         }
-        
-        
-
 
         .pos-main-img {
             position: relative;
