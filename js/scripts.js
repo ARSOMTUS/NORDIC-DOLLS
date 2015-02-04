@@ -6,20 +6,6 @@
 
 window.onload = function() {
     
-//        var btnTestObj = document.getElementById('btn_test');
-//        
-//        var hiddenContentObjObj = document.getElementById('hidden_content');
-//        
-//        var fullSizePhotoObj = document.getElementById('full_size_photo');
-//        var moreInfoAbtDollObj = document.getElementById('more_info_abt_doll');
-//        var formOrderObj = document.getElementById('form_order');
-        
-//        var handler = function(){
-//            hiddenContentObjObj.style.display = 'block';
-//        };
-//        
-//        btnTestObj.onclick = handler;
-
     var subLayerObj = document.getElementById('sub_layer');
     var showHiddenBlockObj = document.getElementsByClassName('show-hidden-block');
 //    var blockMoreInfoObj = document.getElementById('more_info_block');
@@ -83,89 +69,104 @@ window.onload = function() {
         btnMoreInfo.addEventListener('click', showMoreInfo);
         btnMoreInfo.addEventListener('click', changeBtnMoreInfo);
         
-                                /* END */
-        
     }setHandlers();
-    
-        var showSubLayer = function(){
-            subLayerObj.style.display = 'block';
-        };
+                                /* END */
+                                
+                                /* tHrash */
         
-
-    function showSubLayer(){
-        subLayerObj.style.display = 'block';
-    };
-    
-    function hideSubLayer(){ 
-        subLayerObj.style.display = 'none';
-    }
-    
-    var showHiddenBlock = function(){
+//        var btnTestObj = document.getElementById('btn_test');
+//        
+//        var hiddenContentObjObj = document.getElementById('hidden_content');
+//        
+//        var fullSizePhotoObj = document.getElementById('full_size_photo');
+//        var moreInfoAbtDollObj = document.getElementById('more_info_abt_doll');
+//        var formOrderObj = document.getElementById('form_order');
         
-        showSubLayer();
-        showBtnClose();
-        hiddenContentObj.style.display = 'block';
-        
-    };
-    
-    function hideHiddenBlock(){
-        hiddenContentObj.style.display = 'none';
-    }
-    
-    var checkClassActiveElem = function(){
-        
-        clickedElemObj = this;
-        classClickedElemObj = clickedElemObj.attributes['class'].value;
-        classClickedElemObj = classClickedElemObj.split(' ')[0];
-        switch(classClickedElemObj){
-            case 'gallery-cource':
-                showBlockFullSizePhoto();
-                break;
-            case 'btn-more-info':
-                showMoreInfoAbtDoll();
-                break;
-        }
-        
-    };
-    for (var i = 0; i < showHiddenBlockObj.length; i++) {
-        
-        showHiddenBlockObj[i].onclick = showHiddenBlock;
-        showHiddenBlockObj[i].onclick = checkClassActiveElem;
-        
-    }
-    
-    function showBlockFullSizePhoto(){
-        
-        showSubLayer();
-        showHiddenBlock();
-        showBtnClose();
-        fullSizePhotoObj.style.display = 'block';
-        openSelectedPhoto();
-        
-    }
-    
-    function hideBlockFullSizePhoto(){
-        fullSizePhotoObj.style.display = 'none';
-    }
-    
-    function openSelectedPhoto(){
+//        var handler = function(){
+//            hiddenContentObjObj.style.display = 'block';
+//        };
+//        
+//        btnTestObj.onclick = handler;
+//    
+//        var showSubLayer = function(){
+//            subLayerObj.style.display = 'block';
+//        };
+//        
+//
+//    function showSubLayer(){
+//        subLayerObj.style.display = 'block';
+//    };
+//    
+//    function hideSubLayer(){ 
+//        subLayerObj.style.display = 'none';
+//    }
+//    
+//    var showHiddenBlock = function(){
+//        
+//        showSubLayer();
+//        showBtnClose();
+//        hiddenContentObj.style.display = 'block';
+//        
+//    };
+//    
+//    function hideHiddenBlock(){
+//        hiddenContentObj.style.display = 'none';
+//    }
+//    
+//    var checkClassActiveElem = function(){
+//        
+//        clickedElemObj = this;
+//        classClickedElemObj = clickedElemObj.attributes['class'].value;
+//        classClickedElemObj = classClickedElemObj.split(' ')[0];
+//        switch(classClickedElemObj){
+//            case 'gallery-cource':
+//                showBlockFullSizePhoto();
+//                break;
+//            case 'btn-more-info':
+//                showMoreInfoAbtDoll();
+//                break;
+//        }
+//        
+//    };
+//    for (var i = 0; i < showHiddenBlockObj.length; i++) {
+//        
+//        showHiddenBlockObj[i].onclick = showHiddenBlock;
+//        showHiddenBlockObj[i].onclick = checkClassActiveElem;
+//        
+//    }
+//    
+//    function showBlockFullSizePhoto(){
+//        
+//        showSubLayer();
+//        showHiddenBlock();
+//        showBtnClose();
+//        fullSizePhotoObj.style.display = 'block';
+//        openSelectedPhoto();
+//        
+//    }
+//    
+//    function hideBlockFullSizePhoto(){
+//        fullSizePhotoObj.style.display = 'none';
+//    }
+//    
+//    function openSelectedPhoto(){
 //        alert(clickedElemObj.attributes['src'].value);
-        currShowPhotoObj.attributes['src'].value = clickedElemObj.attributes['src'].value;
-    }
-    
-    
-    function showMoreInfoAbtDoll(){
-        
-        showSubLayer();
-        showHiddenBlock();
-        showBtnClose();
-        moreInfoAbtDoll.style.display = 'block';
-        
-    }
-    
-    function hideMoreInfoAbtDoll(){
-        moreInfoAbtDoll.style.display = 'none';
-    }
+//        currShowPhotoObj.attributes['src'].value = clickedElemObj.attributes['src'].value;
+//    }
+//    
+//    
+//    function showMoreInfoAbtDoll(){
+//        
+//        showSubLayer();
+//        showHiddenBlock();
+//        showBtnClose();
+//        moreInfoAbtDoll.style.display = 'block';
+//        
+//    }
+//    
+//    function hideMoreInfoAbtDoll(){
+//        moreInfoAbtDoll.style.display = 'none';
+//    }
     
 ////    var showMoreInfo = function(){ //Display block more info about course.
 ////        
@@ -200,45 +201,45 @@ window.onload = function() {
 //        
 //    }
     
-    var closeWindow = function(){
-        
-        hideHiddenBlock();
-        hideBtnClose();
-        hideSubLayer();
-        
-        switch(classClickedElemObj){
-            case 'gallery-cource':
-                hideBlockFullSizePhoto();
-                break;
-            case 'btn-more-info':
-                hideMoreInfoAbtDoll();
-                break;
-        }
-        
-    };
-    subLayerObj.onclick = closeWindow;
-    btnCloseObj.onclick = closeWindow;
-    
-    var subLayerObjHover = function(){
-        
-        subLayerObj.style.cursor = 'pointer';
-        btnCloseObj.style.opacity = '1';
-        
-    };
-    subLayerObj.onmouseover = subLayerObjHover;
-    
-    var subLayerObjOut = function(){
-        btnCloseObj.style.opacity = '0.5';
-    };
-    subLayerObj.onmouseout = subLayerObjOut;
-    
-    function showBtnClose(){
-        btnCloseObj.style.display = 'inline-block';
-    }
-    
-    function hideBtnClose(){
-        btnCloseObj.style.display = 'none';
-    }
+//    var closeWindow = function(){
+//        
+//        hideHiddenBlock();
+//        hideBtnClose();
+//        hideSubLayer();
+//        
+//        switch(classClickedElemObj){
+//            case 'gallery-cource':
+//                hideBlockFullSizePhoto();
+//                break;
+//            case 'btn-more-info':
+//                hideMoreInfoAbtDoll();
+//                break;
+//        }
+//        
+//    };
+//    subLayerObj.onclick = closeWindow;
+//    btnCloseObj.onclick = closeWindow;
+//    
+//    var subLayerObjHover = function(){
+//        
+//        subLayerObj.style.cursor = 'pointer';
+//        btnCloseObj.style.opacity = '1';
+//        
+//    };
+//    subLayerObj.onmouseover = subLayerObjHover;
+//    
+//    var subLayerObjOut = function(){
+//        btnCloseObj.style.opacity = '0.5';
+//    };
+//    subLayerObj.onmouseout = subLayerObjOut;
+//    
+//    function showBtnClose(){
+//        btnCloseObj.style.display = 'inline-block';
+//    }
+//    
+//    function hideBtnClose(){
+//        btnCloseObj.style.display = 'none';
+//    }
     
     
     

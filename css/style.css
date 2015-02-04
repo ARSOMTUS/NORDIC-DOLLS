@@ -85,7 +85,6 @@ body {
 
 .container {
     position: relative;
-/*    background-color: #f7e59e;*/
     margin: 0 auto;
     padding: 0 0 10px 0;
     width: 960px;
@@ -138,7 +137,6 @@ body {
             height: 400px;
             float: left;
             background-color: #333333;
-/*            padding: 10px;*/
         }
         
         .about-me {
@@ -196,19 +194,19 @@ body {
                         /*COURCE BLOCK*/
 
 .enroll-block {
-    margin: 20px 0 0 0;
-    background-color: #ffffff;
+    margin: 40px 0 0 0;
 }
 
     .about-cource {
         width: 960px;
-        height: 430px;
+        height: 400px;
         float: left;
     }
     
         .about-cource > h2 {
+            width: 120px;
             height: 38px;
-            background-color: #333333;
+            background-color: #4e77ad;
             margin: 0;
             padding: 1px 0 1px 20px;
             color: #fcf9f9;
@@ -234,15 +232,11 @@ body {
         width: 660px;
         height: 362px;
         float: left;
-        background-color: #ffffff;
-        padding: 15px 0 0 0;
-        margin: 15px 0 15px 0;
     }
         
         #photo-cource > img {
-            border: 5px solid #333333; 
-            width: 640px;
-            height: 342px;
+            width: 660px;
+            height: 362px;
         }
         
     .short-description > span {
@@ -266,9 +260,7 @@ body {
         height: 362px;
         float: left;
         background-color: #ffffff;
-        padding: 15px 0 0 0;
-        margin: 15px 0 15px 0;
-        border-left: #bdc3c7 1px dashed; 
+        padding: 35px 0 0 0;
     }
     
         #name-field, #e_mail-field, #phone-field, #button-enroll {
@@ -359,19 +351,17 @@ body {
                     margin: 10px 0 0 0;
                     display: inline-block;
                     padding: 5px;
-                    background-color: #e67e22;
+                    background-color: #4e77ad;
                     color: #fcf9f9;
                     font-size: 0.8em;
-/*                    box-shadow: 6px 2px 4px 1px rgba(0, 0, 0, .2);*/
                 }
                 
             .more-info-text-block > h3 {
-                background-color: #e67e22;
+                background-color: #4e77ad;
                 color: #fcf9f9;
                 padding: 5px;
                 margin: 0 0 20px 0;
                 display: inline-block;
-/*                box-shadow: 6px 2px 4px 1px rgba(0, 0, 0, .2);*/
             }
             
             #lesson-plan-title {
@@ -452,24 +442,33 @@ body {
         width: 960px;
         height: 500px;
         background-color: #ffffff;
-        margin: 20px 0 0 0;
+        margin: 40px 0 0 0;
     }
     
-        .dolls-block > h2 {
-            height: 38px;
+        
+        .block-for-h2 {
+            width: 960px;
+            height: auto;
+            display: block;
             background-color: #333333;
-            margin: 0;
-            padding: 1px 0 1px 20px;
-            color: #fcf9f9;
         }
         
-        .dolls-block > div {
+            .block-for-h2 > h2 {
+                width: 120px;
+                height: 38px;
+                background-color: #4e77ad;
+                margin: 0;
+                padding: 1px 0 1px 20px;
+                color: #fcf9f9;
+            }
+        
+        .goods {
             width: 320px;
             float: left;
             margin: 10px 0 0 0;
         }
         
-            .dolls-block > div > img {
+            .goods > img {
                 display: block;
                 width: 210px;
                 height: 285px;
@@ -542,8 +541,8 @@ body {
                 -webkit-transition: 1s;
                 -moz-transition: 1s;
                 -o-transition: 1s;
+                opacity: 0.5;
                 transition: 1s;
-                background-color: #7f8c8d;
             }
             
         #div_with_border {
@@ -673,5 +672,21 @@ body {
     #form_order {
         display: none;
     }
+    
+                                    /* FOOTER */
 
+    footer {
+        width: 960px;
+        height: 50px;
+        color: #ffffff;
+        background-color: #4e77ad;
+        margin: 40px auto 0 auto;
+        text-align: right;
+    }
+    
+        footer > span {
+            font-size: 0.9em;
+            padding: 25px 5px 0 0 ;
+            display: inline-block;
+        }
     

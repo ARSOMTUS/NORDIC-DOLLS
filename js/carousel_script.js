@@ -8,11 +8,11 @@ $.getJSON("json/gallery-data.json", function (data) {
     $(document).ready(function () {
         $("#flavor_1").agile_carousel({
             carousel_data: data,
-            carousel_outer_height: 378,
-            carousel_height: 378,
-            slide_height: 378,
-            carousel_outer_width: 638,
-            slide_width: 648,
+            carousel_outer_height: 400,
+            carousel_height: 400,
+            slide_height: 400,
+            carousel_outer_width: 660,
+            slide_width: 660,
             transition_time: 2000,
             timer: 5000,
             continuous_scrolling: true,
