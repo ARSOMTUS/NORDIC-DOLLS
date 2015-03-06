@@ -13,6 +13,7 @@ html {
 }
 
 body {
+
 /*    font-size: 1em;*/
 /*    font-family: 'Marmelad', sans-serif;
     background-color: #333333;
@@ -37,7 +38,9 @@ body {
 h2 {
     font-family: 'Lobster', cursive;
     color: #333333;
-    font-size:20px; font-size:2rem;
+    font-size:20px;
+    font-size:2rem;
+    margin: 0 0 3% 0;
 }
 
 
@@ -49,13 +52,12 @@ h2 {
 
 .melian-studio-block 
     {
-/*       height: 500px;*/
        display: inline-block;
        text-align: center;
        width: 86.28%;
-       height: 700px; 
+       height: auto;
        margin: 0 6.86% 0 6.86%;
-/*       margin-bottom: 8%;*/
+       padding-bottom: 12%;
     }
     
     
@@ -63,8 +65,8 @@ h2 {
 /*            width: 457px;
             height: 300px;*/
             margin: 2% 0 0 0;
-            width: 557px;
-            height: 400px;
+            width: 51%;
+            height: 40%;
         }
         
         .melian-studio-block > span {
@@ -82,12 +84,38 @@ h2 {
 
 /* TEACHER BLOCK BLOCK */
 
+.add-lft-border {
+    border-left: 1px solid #ddd9d9;
+}
+
+.add-height-auto {
+    height: auto;
+}
+
     .teacher-block {
         height: auto;
         margin: 0 6.86% 0 6.86%;
 /*        margin-left: 4%;*/
 /*        margin-bottom: 8%;*/
     }
+    
+        .teacher {
+            display: inline-block;
+            width: 100%;
+            height: auto;
+            text-align: center;
+        }
+        
+            .teacher > img {
+                width: 60%;
+                height: 60%;
+                border-radius: 200px;
+/*                border: 2px solid #bdc3c7;*/
+
+            }
+            
+            .block-carousel {
+            }
 
 
 /* END */
