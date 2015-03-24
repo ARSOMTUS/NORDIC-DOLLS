@@ -44,78 +44,79 @@ h2 {
 }
 
 
-/* MELIAN STUDIO BLOCK */
+/* HEADER */
 
-.add-background {
-    background-image: url(../img/bg_alt.jpg);
-}
-
-.melian-studio-block 
-    {
-       display: inline-block;
-       text-align: center;
-       width: 86.28%;
-       height: auto;
-       margin: 0 6.86% 0 6.86%;
-       padding-bottom: 12%;
+.melian-studio-block {
+  text-align: center;
+  height: auto;
+  padding-bottom: 12%;
+  background-image: url(../img/bg_alt.jpg);
     }
     
     
         .melian-studio-block > img {
-/*            width: 457px;
-            height: 300px;*/
-            margin: 2% 0 0 0;
-            width: 51%;
-            height: 40%;
+          margin: 2% 0 0 0;
+          width: 51%;
+          height: 40%;
         }
         
         .melian-studio-block > span {
-            font-family: 'Lobster', cursive;
-/*            text-align: center;*/
-            width: auto;
-            height: auto;
-            color: #ffffff;
-/*            font-size:20px; font-size:2rem;*/
-            font-size:30px; font-size:3rem;
-            margin: 2% 0 0 0;
+          font-family: 'Lobster', cursive;
+          display: inline-block;
+          width: 83.3%;
+          height: auto;
+          color: #ffffff;
+          font-size:30px; font-size:3rem;
         }
-    
+
 /* END */
 
-/* TEACHER BLOCK BLOCK */
+/* TEACHER BLOCK */
 
-.add-lft-border {
-    border-left: 1px solid #ddd9d9;
+.wrapp-teacher-block {
+  width: 91.63%;
+  margin: 0 auto;
 }
 
-.add-height-auto {
-    height: auto;
-}
-
-    .teacher-block {
-        height: auto;
-        margin: 0 6.86% 0 6.86%;
-/*        margin-left: 4%;*/
-/*        margin-bottom: 8%;*/
+    .teacher {
+      height: auto;
+      text-align: center;
     }
-    
-        .teacher {
-            display: inline-block;
-            width: 100%;
-            height: auto;
-            text-align: center;
-        }
-        
-            .teacher > img {
-                width: 60%;
-                height: 60%;
-                border-radius: 200px;
-/*                border: 2px solid #bdc3c7;*/
 
-            }
-            
-            .block-carousel {
-            }
+        .teacher > img {
+          width: 60%;
+          height: 60%;
+          border-radius: 200px;
+/*                border: 2px solid #bdc3c7;*/
+        }
+
+    .block-carousel {
+      display: inline-block;
+      border-left: 1px solid #ddd9d9;
+      text-align: center;
+    }
+
+        .flexslider {
+          display: inline-block;
+          width: 75%;
+        }
+
+/* END */
+
+
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+
+/* TEACHER BLOCK */
+
+    .block-carousel {
+      border: none;
+    }
+
+
+/* END */
+
+}
+
 
 
 /* END */
@@ -831,4 +832,3 @@ h2 {
             display: inline-block;
             text-shadow: 0.1em 0.1em 0.2em black; 
         }*/
-    

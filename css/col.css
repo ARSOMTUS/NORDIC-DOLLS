@@ -4,7 +4,8 @@
 .section {
 	clear: both;
 	padding: 0px;
-	margin: 0px;
+/*	margin: 0px; canceled*/
+    margin: 0 0 4% 0; /* added */
 }
 
 /*  GROUPING  ============================================================================= */
@@ -25,9 +26,10 @@
 /*  GRID COLUMN SETUP   ==================================================================== */
 
 .col {
-	display: block;
+/*	display: block; canceled*/
+    display: inline-block; /* added */
 	float:left;
-	margin: 1.1% 0 1% 1.6%;
+/*	margin: 1.1% 0 1% 1.6%; canceled*/
 }
 
 .col:first-child { margin-left: 0; }
@@ -37,7 +39,11 @@
 /*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
 
 @media only screen and (max-width: 480px) {
+/*
+canceled
+*********
 	.col { 
 		margin: 1% 0 1% 0%;
 	}
+*/
 }
