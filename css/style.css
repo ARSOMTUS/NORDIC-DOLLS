@@ -8,26 +8,16 @@ and open the template in the editor.
     Author     : Evgeny
 */
 
-html { 
-    font-size:100%;
+html {
+  font-size:100%;
 }
 
 body {
-
-/*    font-size: 1em;*/
-/*    font-family: 'Marmelad', sans-serif;
-    background-color: #333333;
-    background-image: url(../img/bg-1.jpg);
-    margin: 0;
-    overflow: auto;*/
-}
-
-.clear-margin {
-    margin: 0 0 0;
-}
-
-.add-margin-btm {
-    margin: 0 0 4% 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #000000;
+  overflow: auto;
 }
 
 .adaptive-img {
@@ -40,7 +30,7 @@ h2 {
     color: #333333;
     font-size:20px;
     font-size:2rem;
-    margin: 0 0 3% 0;
+    margin: 0 0 5% 0;
 }
 
 
@@ -51,7 +41,7 @@ h2 {
   height: auto;
   padding-bottom: 12%;
   background-image: url(../img/bg_alt.jpg);
-    }
+}
     
     
         .melian-studio-block > img {
@@ -83,12 +73,43 @@ h2 {
       text-align: center;
     }
 
-        .teacher > img {
+        #teacher-pic {
           width: 60%;
           height: 60%;
           border-radius: 200px;
 /*                border: 2px solid #bdc3c7;*/
         }
+
+        #teacher-name {
+          display: inline-block;
+          margin: 4% 0 8% 0;
+        }
+
+            .social-btns {
+              display: inline-block;
+              text-align: center;
+            }
+
+                .social-btns > a {
+                  display: inline-block;
+                  width: auto;
+                  height: auto;
+                  outline: none;
+                }
+
+                .social-btns > a > img{
+                  width: 50px;
+                  height: 50px;
+                }
+
+                .social-btns > a > img:hover {
+                  -webkit-transition: 0.1s;
+                  -moz-transition: 0.1s;
+                  -o-transition: 0.1s;
+                  transition: 0.1s;
+                  opacity: 0.5;
+                  cursor: pointer;
+                }
 
     .block-carousel {
       display: inline-block;
@@ -98,7 +119,7 @@ h2 {
 
         .flexslider {
           display: inline-block;
-          width: 75%;
+          width: 88%;
         }
 
 /* END */
