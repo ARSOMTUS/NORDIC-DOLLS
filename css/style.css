@@ -8,6 +8,70 @@ and open the template in the editor.
     Author     : Evgeny
 */
 
+/* FONT */
+
+@font-face {
+  font-family: 'melian-glyph-icon';
+  src: url('../font/melian-glyph-icon.eot?57130140');
+  src: url('../font/melian-glyph-icon.eot?57130140#iefix') format('embedded-opentype'),
+       url('../font/melian-glyph-icon.woff?57130140') format('woff'),
+       url('../font/melian-glyph-icon.ttf?57130140') format('truetype'),
+       url('../font/melian-glyph-icon.svg?57130140#melian-glyph-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'melian-glyph-icon';
+    src: url('../font/melian-glyph-icon.svg?57130140#melian-glyph-icon') format('svg');
+  }
+}
+*/
+
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "melian-glyph-icon";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-deviantart:before { content: '\e800'; } /* '' */
+.icon-vk:before { content: '\e801'; } /* '' */
+.icon-facebook:before { content: '\e802'; } /* '' */
+.icon-tumblr:before { content: '\e803'; } /* '' */
+.icon-mail:before { content: '\e804'; } /* '' */
+.icon-user:before { content: '\e805'; } /* '' */
+.icon-phone:before { content: '\e806'; } /* '' */
+
+/* END */
+
 html {
   font-size:100%;
 }
@@ -76,7 +140,7 @@ h2 {
         #teacher-pic {
           width: 60%;
           height: 60%;
-          border-radius: 200px;
+          border-radius: 100%;
 /*                border: 2px solid #bdc3c7;*/
         }
 
@@ -88,28 +152,59 @@ h2 {
             .social-btns {
               display: inline-block;
               text-align: center;
+              margin-bottom: 4%;
             }
 
                 .social-btns > a {
                   display: inline-block;
-                  width: auto;
-                  height: auto;
+                  background-color: #333333;
+                  width: 2.6em;
+                  height: 2.6em;
                   outline: none;
+                  text-decoration: none;
+                  border-radius: 8px;
+                  text-align: center;
                 }
 
-                .social-btns > a > img{
-                  width: 50px;
-                  height: 50px;
+                .social-btns > a:link, a:visited, a:active {
+                  color: #333333;
                 }
 
-                .social-btns > a > img:hover {
-                  -webkit-transition: 0.1s;
-                  -moz-transition: 0.1s;
-                  -o-transition: 0.1s;
-                  transition: 0.1s;
-                  opacity: 0.5;
+                .social-btns > a:hover {
                   cursor: pointer;
                 }
+
+                    #vk-link:hover {
+                      background-color: #4c75a3;
+                    }
+
+                    #facebook-link:hover {
+                      background-color: #4a6ea9;
+                    }
+
+                    #tumblr-link:hover {
+                      background-color: #36587a;
+                    }
+
+                    #deviant-link:hover {
+                      background-color: #4b5b4e;
+                    }
+
+                    #deviant-link:hover {
+                      border
+                    }
+
+                .social-btns > a > span {
+                  display: inline-block;
+                  font-size: 1.3em;
+                  color: #fff;
+                  margin-top: 25%;
+                }
+
+                #icon-vk {
+                  margin-right: 16%;
+                }
+
 
     .block-carousel {
       display: inline-block;
@@ -125,14 +220,95 @@ h2 {
 /* END */
 
 
-@media only screen and (min-width: 300px) and (max-width: 480px) {
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+
+/* HEADER */
+
+.melian-studio-block > span {
+  font-size:14px;
+  font-size:1.4rem;
+}
+
+/* END */
 
 /* TEACHER BLOCK */
 
-    .block-carousel {
-      border: none;
-    }
+.teacher {
+  padding-right: 2%;
+}
 
+#teacher-name {
+  font-size:9px;
+  font-size:0.9rem;
+}
+
+.social-btns > a {
+  width: 2.5em;
+  height: 2.5em;
+}
+
+.social-btns > a > span {
+  font-size: 1.3em;
+}
+
+/* END */
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+/* HEADER */
+
+.melian-studio-block > span {
+  font-size:14px;
+  font-size:1.4rem;
+}
+
+/* END */
+
+/* TEACHER BLOCK */
+
+.teacher {
+  padding-right: 2%;
+}
+
+
+#teacher-name {
+  font-size:7px;
+  font-size:0.7rem;
+}
+
+.social-btns > a {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.social-btns > a > span {
+  font-size: 0.8em;
+}
+
+/* END */
+
+}
+
+
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+
+/* HEADER */
+
+.melian-studio-block > span {
+  font-size:9px;
+  font-size:0.9rem;
+}
+
+/* END */
+
+
+/* TEACHER BLOCK */
+
+.block-carousel {
+  border: none;
+}
 
 /* END */
 
