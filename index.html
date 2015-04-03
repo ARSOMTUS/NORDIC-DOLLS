@@ -106,13 +106,21 @@ and open the template in the editor.
                 <div class="wrapp-course-block">
                     <h2>Курсы</h2>
                     <div class="cource-photo col span_6_of_12">
-                        <span id="short-description">
+                        <span class="photo-title" id="short-description">
                             Создайте куклу своими руками и подарите любимым.
-                        </span>
-                        <span id="price-cource">
+                        </span><br>
+                        <span class="photo-title" id="price-cource">
                             9900 р.
                         </span>
                         <img src="img/cource10.jpg" alt="mold-plaster-form">
+                    </div>
+                    <div class="pos-form-enroll col span_5_of_12">
+                        <form name="enroll" action="" method="post" class="form-enroll" id="enroll-form">
+                            <input type="text" name="user" placeholder="&#xe805;  Имя" id="name-field" class="glyph-icon"><br>
+                            <input type="text" name="e_mail" placeholder="&#xe804;  Эл. почта" id="email-field" class="glyph-icon"><br>
+                            <input type="text" name="phone" placeholder="&#xe806;  Телефон" id="phone-field" class="glyph-icon"><br>
+                            <button type="submit" id="button-enroll">Записаться</button>
+                        </form>
                     </div>
                 </div>
 

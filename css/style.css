@@ -31,7 +31,7 @@ and open the template in the editor.
 }
 */
 
- [class^="icon-"]:before, [class*=" icon-"]:before {
+[class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "melian-glyph-icon";
   font-style: normal;
   font-weight: normal;
@@ -70,6 +70,9 @@ and open the template in the editor.
 .icon-user:before { content: '\e805'; } /* '' */
 .icon-phone:before { content: '\e806'; } /* '' */
 
+.glyph-icon {
+  font-family: "melian-glyph-icon", sans-serif;
+}
 /* END */
 
 html {
@@ -85,16 +88,16 @@ body {
 }
 
 .adaptive-img {
-    max-width: 100%;
-    height: auto !important;
+  max-width: 100%;
+  height: auto !important;
 }
 
 h2 {
-    font-family: 'Lobster', cursive;
-    color: #333333;
-    font-size:20px;
-    font-size:2rem;
-    margin: 0 0 5% 0;
+  font-family: 'Lobster', cursive;
+  color: #333333;
+  font-size:20px;
+  font-size:2rem;
+  margin: 0 0 5% 0;
 }
 
 
@@ -106,22 +109,21 @@ h2 {
   padding-bottom: 12%;
   background-image: url(../img/bg_alt.jpg);
 }
-    
-    
-        .melian-studio-block > img {
-          margin: 2% 0 0 0;
-          width: 51%;
-          height: 40%;
-        }
-        
-        .melian-studio-block > span {
-          font-family: 'Lobster', cursive;
-          display: inline-block;
-          width: 83.3%;
-          height: auto;
-          color: #ffffff;
-          font-size:30px; font-size:3rem;
-        }
+
+.melian-studio-block > img {
+  margin: 2% 0 0 0;
+  width: 51%;
+  height: 40%;
+}
+
+.melian-studio-block > span {
+  font-family: 'Lobster', cursive;
+  display: inline-block;
+  width: 83.3%;
+  height: auto;
+  color: #ffffff;
+  font-size:30px; font-size:3rem;
+}
 
 /* END */
 
@@ -132,90 +134,85 @@ h2 {
   margin: 0 auto;
 }
 
-    .teacher {
-      height: auto;
-      text-align: center;
-    }
+.teacher {
+  height: auto;
+  text-align: center;
+}
 
-        #teacher-pic {
-          width: 60%;
-          height: 60%;
-          border-radius: 100%;
-/*                border: 2px solid #bdc3c7;*/
-        }
+#teacher-pic {
+  width: 60%;
+  height: 60%;
+  border-radius: 100%;
+}
 
-        #teacher-name {
-          display: inline-block;
-          margin: 4% 0 8% 0;
-        }
+#teacher-name {
+  display: inline-block;
+  margin: 4% 0 8% 0;
+}
 
-            .social-btns {
-              display: inline-block;
-              text-align: center;
-              margin-bottom: 4%;
-            }
+.social-btns {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 4%;
+}
 
-                .social-btns > a {
-                  display: inline-block;
-                  background-color: #333333;
-                  width: 2.6em;
-                  height: 2.6em;
-                  outline: none;
-                  text-decoration: none;
-                  border-radius: 8px;
-                  text-align: center;
-                }
+.social-btns > a {
+  display: inline-block;
+  background-color: #333333;
+  width: 2.6em;
+  height: 2.6em;
+  outline: none;
+  text-decoration: none;
+  border-radius: 8px;
+  text-align: center;
+}
 
-                .social-btns > a:link, a:visited, a:active {
-                  color: #333333;
-                }
+.social-btns > a:link, a:visited, a:active {
+  color: #333333;
+}
 
-                .social-btns > a:hover {
-                  cursor: pointer;
-                }
+.social-btns > a:hover {
+  cursor: pointer;
+}
 
-                    #vk-link:hover {
-                      background-color: #4c75a3;
-                    }
+#vk-link:hover {
+  background-color: #4c75a3;
+}
 
-                    #facebook-link:hover {
-                      background-color: #4a6ea9;
-                    }
+#facebook-link:hover {
+  background-color: #4a6ea9;
+}
 
-                    #tumblr-link:hover {
-                      background-color: #36587a;
-                    }
+#tumblr-link:hover {
+  background-color: #36587a;
+}
 
-                    #deviant-link:hover {
-                      background-color: #4b5b4e;
-                    }
+#deviant-link:hover {
+  background-color: #4b5b4e;
+}
 
-                    #deviant-link:hover {
-                      border
-                    }
+.social-btns > a > span {
+  display: inline-block;
+  font-size: 1.3em;
+  color: #fff;
+  margin-top: 25%;
+}
 
-                .social-btns > a > span {
-                  display: inline-block;
-                  font-size: 1.3em;
-                  color: #fff;
-                  margin-top: 25%;
-                }
-
-                #icon-vk {
-                  margin-right: 16%;
-                }
+#icon-vk {
+  margin-right: 16%;
+}
 
 
-    .block-carousel {
-      display: inline-block;
-      border-left: 1px solid #ddd9d9;
-      text-align: center;
-    }
+.block-carousel {
+  display: inline-block;
+  border-left: 1px solid #ddd9d9;
+  text-align: center;
+}
 
-        .flexslider {
-          display: inline-block;
-          width: 88%;
-        }
+.flexslider {
+  display: inline-block;
+  width: 88%;
+}
 
 /* END */
 
@@ -223,66 +220,104 @@ h2 {
 
 .course-block {
   height: auto;
-/*  height: 500px;*/
   background-image: url(../img/bg-5.jpg);
 }
 
-    .wrapp-course-block {
-      width: 91.63%;
-      margin: 0 auto;
+.wrapp-course-block {
+  width: 91.63%;
+  margin: 0 auto;
 }
 
-    .wrapp-course-block h2 {
-      padding-top: 2%;
-      color: #e6e6e6;
-      text-shadow: 0.1em 0.1em 0.2em black;
-    }
-
-    .cource-photo img {
-      width: 100%;
-      max-height: 650px;
-      margin-bottom: 4%;
-      border-radius: 8px;
-      box-shadow:
-        0 1px 4px rgba(0, 0, 0, .3),
-       -23px 0 20px -23px rgba(0, 0, 0, .8),
-       23px 0 20px -23px rgba(0, 0, 0, .8),
-       0 0 40px rgba(0, 0, 0, .1) inset;
+.wrapp-course-block h2 {
+  padding-top: 2%;
+  color: #e6e6e6;
 }
 
-        #price-cource {
-          position: absolute;
-          display: inline-block;
-          background-color: #d35400;
-          border-radius: 0 50px 50px 0;
-          border: 1px solid #d35400;
-          width: auto;
-          height: auto;
-          font-size: 20px;
-          font-size: 2rem;
-          padding: 1%;
-          text-shadow: 0.1em 0.1em 0.2em black;
-          color: aliceblue;
-          font-family: 'Lobster', cursive;
-          margin-top: 2%;
-        }
+.cource-photo img {
+  width: 100%;
+  max-height: 650px;
+  margin-bottom: 4%;
+  border-radius: 8px;
+  box-shadow:
+  0 1px 4px rgba(0, 0, 0, .3),
+  -23px 0 20px -23px rgba(0, 0, 0, .8),
+  23px 0 20px -23px rgba(0, 0, 0, .8),
+  0 0 40px rgba(0, 0, 0, .1) inset;
+}
 
-        #short-description {
-          display: inline-block;
-          background-color: #e74c3c;
-          border-radius: 13em 0.5em/1em 0.5em;
-          width: 94%;
-          height: auto;
-          font-size: 14px;
-          font-size: 1.4rem;
-          padding: 3%;
-          text-align: center;
-          margin-bottom: 2%;
-          color: aliceblue;
-          font-family: 'Lobster', cursive;
-          text-shadow: 0.1em 0.1em 0.2em black;
-        }
+.photo-title {
+  display: inline-block;
+  height: auto;
+  color: aliceblue;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  font-family: 'Lobster', cursive;
+}
 
+#price-cource {
+  position: absolute;
+  background-color: #d35400;
+  border-radius: 0 50px 50px 0;
+  width: auto;
+  font-size: 20px;
+  font-size: 2rem;
+  padding: 1%;
+  margin-top: 2%;
+}
+
+#short-description {
+  background-color: #e74c3c;
+  border-radius: 13em 0.5em/1em 0.5em;
+  width: 94%;
+  font-size: 14px;
+  font-size: 1.4rem;
+  padding: 3%;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.pos-form-enroll {
+  padding: 6% 0 0 8.33%;
+}
+
+.form-enroll {
+  padding: 4%;
+  border-radius: 8px;
+  background-color: #e4e7e8;
+
+}
+
+.form-enroll input {
+  width: 95%;
+  height: 50px;
+  border: none;
+  margin-bottom: 4%;
+  border-radius: 8px;
+  font-size: 10px;
+  font-size: 1rem;
+  padding-left: 4%;
+  outline: none;
+}
+
+.form-enroll button {
+  width: 99%;
+  height: 50px;
+  border: none;
+  margin-top: 8%;
+  font-size: 12px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+}
+
+.form-enroll button:hover {
+  background: rgb(53, 167, 110);
+  cursor: pointer;
+}
 
 /* END */
 
@@ -374,6 +409,10 @@ h2 {
 
 .block-carousel {
   border: none;
+}
+
+.pos-form-enroll {
+  padding-left: 0;
 }
 
 /* END */
