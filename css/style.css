@@ -62,13 +62,15 @@ and open the template in the editor.
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.icon-deviantart:before { content: '\e800'; } /* '' */
-.icon-vk:before { content: '\e801'; } /* '' */
-.icon-facebook:before { content: '\e802'; } /* '' */
-.icon-tumblr:before { content: '\e803'; } /* '' */
-.icon-mail:before { content: '\e804'; } /* '' */
-.icon-user:before { content: '\e805'; } /* '' */
-.icon-phone:before { content: '\e806'; } /* '' */
+.icon-user:before { content: '\e800'; } /* '' */
+.icon-mail:before { content: '\e801'; } /* '' */
+.icon-phone:before { content: '\e802'; } /* '' */
+.icon-down-open:before { content: '\e803'; } /* '' */
+.icon-up-open:before { content: '\e804'; } /* '' */
+.icon-deviantart:before { content: '\e805'; } /* '' */
+.icon-vk:before { content: '\e806'; } /* '' */
+.icon-facebook:before { content: '\e807'; } /* '' */
+.icon-tumblr:before { content: '\e808'; } /* '' */
 
 .glyph-icon {
   font-family: "melian-glyph-icon", sans-serif;
@@ -319,6 +321,90 @@ h2 {
   cursor: pointer;
 }
 
+.lessons-section {
+  margin-bottom: 0;
+}
+
+.cource-lesson {
+  margin-top: 3%;
+  height: auto;
+}
+
+.header-lesson {
+  display: inline-block;
+  background-color: #fff;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  font-size: 1.3rem;
+  border-radius: 3px;
+  background: #2c3e50;
+  color: #fff;
+}
+
+.lesson-numb {
+  display: inline-block;
+  width: 85%;
+  padding-top: 15px;
+}
+
+.header-lesson .icon-down-open:hover {
+  cursor: pointer;
+}
+
+
+
+.description-lesson {
+  background-color: #fff;
+/*
+  display: inline-block;
+  width: 100%;
+*/
+}
+
+.rght-col {
+  margin-left: 16.66%;
+}
+
+/* FOR TEST!! */
+#header-lesson-1 {
+  border-radius: 3px 3px 0 0;
+}
+
+#desc-lesson-1 {
+  border-radius: 0 0 3px 3px;
+  padding: 30px;
+}
+
+#desc-lesson-1 > p {
+  font-size: 9px;
+  font-size: 0.9rem;
+  height: auto;
+  margin: 0;
+  display: inline-block;
+  text-align: justify;
+}
+
+#desc-lesson-1 > p > span {
+  font-weight: bold;
+}
+
+.list-of-material {
+  color: #2c3e50;
+  font-size: 0.9em;
+  margin-top: 5px;
+  }
+
+.list-of-material li{
+  margin-left: 50px;
+}
+
+.list-of-material > li > span {
+  color: #000;
+}
+
+
 /* END */
 
 @media only screen and (min-width: 768px) and (max-width: 1000px) {
@@ -413,6 +499,10 @@ h2 {
 
 .pos-form-enroll {
   padding-left: 0;
+}
+
+.rght-col {
+  margin-left: 0;
 }
 
 /* END */
