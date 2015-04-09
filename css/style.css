@@ -100,6 +100,7 @@ h2 {
   font-size:20px;
   font-size:2rem;
   margin: 0 0 5% 0;
+  display: inline-block;
 }
 
 
@@ -230,9 +231,41 @@ h2 {
   margin: 0 auto;
 }
 
+
 .wrapp-course-block h2 {
   padding-top: 2%;
   color: #e6e6e6;
+}
+
+
+.photo-title {
+  display: inline-block;
+  height: auto;
+  color: aliceblue;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  font-family: 'Lobster', cursive;
+}
+
+#short-description {
+  background-color: #e74c3c;
+  border-radius: 13em 0.5em/1em 0.5em;
+  width: 94%;
+  font-size: 14px;
+  font-size: 1.4rem;
+  padding: 3%;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+#price-cource {
+  position: absolute;
+  background-color: #d35400;
+  border-radius: 0 50px 50px 0;
+  width: auto;
+  font-size: 20px;
+  font-size: 2rem;
+  padding: 1%;
+  margin-top: 2%;
 }
 
 .cource-photo img {
@@ -247,35 +280,6 @@ h2 {
   0 0 40px rgba(0, 0, 0, .1) inset;
 }
 
-.photo-title {
-  display: inline-block;
-  height: auto;
-  color: aliceblue;
-  text-shadow: 0.1em 0.1em 0.2em black;
-  font-family: 'Lobster', cursive;
-}
-
-#price-cource {
-  position: absolute;
-  background-color: #d35400;
-  border-radius: 0 50px 50px 0;
-  width: auto;
-  font-size: 20px;
-  font-size: 2rem;
-  padding: 1%;
-  margin-top: 2%;
-}
-
-#short-description {
-  background-color: #e74c3c;
-  border-radius: 13em 0.5em/1em 0.5em;
-  width: 94%;
-  font-size: 14px;
-  font-size: 1.4rem;
-  padding: 3%;
-  text-align: center;
-  margin-bottom: 2%;
-}
 
 .pos-form-enroll {
   padding: 6% 0 0 8.33%;
@@ -285,7 +289,6 @@ h2 {
   padding: 4%;
   border-radius: 8px;
   background-color: #e4e7e8;
-
 }
 
 .form-enroll input {
@@ -321,6 +324,21 @@ h2 {
   cursor: pointer;
 }
 
+
+.duration {
+  display: inline-block;
+  padding: 15px;
+  background-color: #3498db;
+  border-radius: 13em 0.5em/1em 0.5em;
+  color: aliceblue;
+  text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+
+.rght-col {
+  margin-left: 16.66%;
+}
+
 .lessons-section {
   margin-bottom: 0;
 }
@@ -332,14 +350,13 @@ h2 {
 
 .header-lesson {
   display: inline-block;
-  background-color: #fff;
   height: 50px;
   width: 100%;
   text-align: center;
   font-size: 13px;
   font-size: 1.3rem;
-  border-radius: 3px;
-  background: #2c3e50;
+  border-radius: 3px 3px 0 0;
+  background-color: #3498db;
   color: #fff;
 }
 
@@ -349,35 +366,22 @@ h2 {
   padding-top: 15px;
 }
 
-.header-lesson .icon-down-open:hover {
+.header-lesson .icon-up-open:hover {
   cursor: pointer;
 }
 
-
-
 .description-lesson {
   background-color: #fff;
-/*
-  display: inline-block;
-  width: 100%;
-*/
-}
-
-.rght-col {
-  margin-left: 16.66%;
-}
-
-/* FOR TEST!! */
-#header-lesson-1 {
-  border-radius: 3px 3px 0 0;
-}
-
-#desc-lesson-1 {
   border-radius: 0 0 3px 3px;
   padding: 30px;
 }
 
-#desc-lesson-1 > p {
+.gallery-cource {
+  border-radius: 8px;
+  margin-bottom: 2%;
+}
+
+.description-lesson > p {
   font-size: 9px;
   font-size: 0.9rem;
   height: auto;
@@ -386,12 +390,12 @@ h2 {
   text-align: justify;
 }
 
-#desc-lesson-1 > p > span {
+.description-lesson > p > span {
   font-weight: bold;
 }
 
 .list-of-material {
-  color: #2c3e50;
+  color: #3498db;
   font-size: 0.9em;
   margin-top: 5px;
   }
@@ -403,6 +407,12 @@ h2 {
 .list-of-material > li > span {
   color: #000;
 }
+
+
+/* END */
+
+/* BUY */
+
 
 
 /* END */
@@ -477,7 +487,6 @@ h2 {
 /* END */
 
 }
-
 
 @media only screen and (min-width: 300px) and (max-width: 480px) {
 
