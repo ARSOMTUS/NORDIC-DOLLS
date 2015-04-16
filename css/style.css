@@ -413,7 +413,40 @@ h2 {
 
 /* BUY */
 
+.buy-block {
+  height: auto;
+}
 
+.wrapp-buy-block {
+  width: 91.63%;
+  margin: 0 auto;
+}
+
+.item-block1, .item-block2, .item-block3 {
+  width: 25%;
+  height: auto;
+  padding: 1%;
+  margin: auto 2.7%;
+  text-align: center;
+
+}
+
+.item-block1 > img, .item-block2 > img, .item-block3 > img {
+  width: 65%;
+/*  height: 65%;*/
+}
+
+.item-block1 {
+  background-color: #d15b5b;
+}
+
+.item-block2 {
+  background-color: #5bd17b;
+}
+
+.item-block3 {
+  background-color: #5bb1d1;
+}
 
 /* END */
 
@@ -613,356 +646,6 @@ h2 {
     height: auto;
 }
 
-                                HEADER BLOCK
-
-.logo {
-    width: 223px;
-    height: 168px;
-    float: left;
-    text-align: center;
-    background-image: url(../img/bg-block.png);
-    background-color: #ffffff;
-}
-
-    .logo > img {
-        margin: 15px 0 0 0;
-        width: 211px;
-        height: 148px;
-    }
-
-.main-title {
-    width: 737px;
-    height: 168px;
-    float: left;
-    background-color: #333333;
-}
-
-    .main-title > h1 {
-        color: #ffffff;
-        color: #f0f8ff;
-        margin: 85px 0 0 0;
-        text-align: left;
-        padding: 0 0 0 15px;
-        text-shadow: 0.1em 0.1em 0.2em black; 
-    }
-
-                        TEACHER BLOCK
-
-    .teacher-block {
-        margin: 40px 0 0 0;
-    }
-    
-        #flavor_1 {
-            width: 660px;
-            height: 400px;
-            float: left;
-            background-color: #333333;
-        }
-        
-        .about-me {
-            width: 300px;
-            height: 400px;
-            float: left;
-            background-image: url(../img/bg-block.png);
-            background-color: #ffffff;
-            text-align: center;
-            padding: 30px 0 0 0;
-        }
-        
-            .about-me > img {
-                width: 180px;
-                height: 180px;
-                border-radius: 120px;
-                border: 2px solid #bdc3c7;
-            }
-            
-            .about-me > span {
-                color: #333333;
-                color: #ffffff;
-                font-style: italic;
-                margin: 2px 0 0 0;
-                padding: 4px;
-                display: block;
-                text-shadow: 0.1em 0.1em 0.2em black;
-                color: aliceblue;
-                text-shadow:1px 1px 2px #aaaaaa; 
-            }
-            
-            .social-btns {
-                display: inline-block;
-                text-align: center; 
-                margin: 48px 0 0 0;
-            }
-            
-                .social-btns > a {
-                    display: inline-block;
-                    width: auto;
-                    height: auto;
-                    outline: none;
-                }
-                
-                .social-btns > a > img{
-                    width: 50px;
-                    height: 50px;
-                    margin: 0 0 0 4px;
-                }
-                
-                .social-btns > a > img:hover {
-                    -webkit-transition: 1s;
-                    -moz-transition: 1s;
-                    -o-transition: 1s;
-                    transition: 1s;
-                    opacity: 0.5;
-                    cursor: pointer;
-                }
-    
-                        COURCE BLOCK
-
-.enroll-block {
-    margin: 40px 0 0 0;
-}
-
-    .about-cource {
-        width: 960px;
-        height: 400px;
-        float: left;
-    }
-    
-        .about-cource > h2 {
-            width: 120px;
-            height: 38px;
-            background-color: #4e77ad;
-            margin: 0;
-            padding: 1px 0 1px 20px;
-            color: #fcf9f9;
-        }
-        
-    .price-cource {
-        position: absolute;
-        width: 114px;
-        height: auto;
-    }
-        
-        .price-cource > span {
-            font-size: 1.6em;
-            background-color: #4e77ad;
-            height: 38px;
-            margin: 40px 0 0 0;
-            padding: 1px 4px 1px 20px;
-            color: #f3efef;
-            display: inline-block;
-        }
-        
-    #photo-cource {
-        width: 660px;
-        height: 362px;
-        float: left;
-    }
-        
-        #photo-cource > img {
-            width: 660px;
-            height: 362px;
-        }
-        
-    .short-description > span {
-        position: absolute;
-        font-style: italic;
-        font-size: 1.2em;
-        display: inline-block;
-        background-color: #4e77ad;
-        margin: 90px 0 0 0;
-        padding: 8px;
-        width: 170px; 
-        height: 120px;
-        opacity: 0.8;
-        color: #ffffff;
-        text-align: center;
-        text-shadow: #333333 1px 1px 0;
-    }
-    
-    .form-enroll {
-        width: 300px;
-        height: 362px;
-        float: left;
-        background-image: url(../img/bg-block.png);
-        background-color: #ffffff;
-        padding: 35px 0 0 0;
-    }
-    
-        #name-field, #e_mail-field, #phone-field, #button-enroll {
-            width: 260px;
-            height: 40px;
-            margin: 0 0 10px 20px;
-        }
-        
-        #name-field, #e_mail-field, #phone-field {
-            color: #333333;
-            border: #bdc3c7 2px solid;
-            padding: 0 0 0 10px;
-            border: none;
-        }
-        
-        #button-enroll {
-            font-size: 1.1em;
-            color: #ffffff;
-            background-color: #4e77ad;
-            border: none;
-            margin-top: 25px;
-        }
-        
-        #button-enroll:hover {
-            -webkit-transition: 1s;
-            -moz-transition: 1s;
-            -o-transition: 1s;
-            transition: 1s;
-            opacity: 0.5;
-            cursor: pointer;
-        }
-        
-    .pic-mail {
-        text-align: center;
-        padding: 20px 0 0 0;
-    }
-        
-        .pic-mail > img {
-            width: 120px;
-            height: 120px;
-        }
-        
-        
-                         MORE INFO ABOUT COURCE 
-                        
-    #more_info_block {
-        margin: 20px 0 0 0;
-        background-color: #ffffff; 
-        display: none;
-    }                
-                        
-        .more-info-btn-wrap {
-            text-align: center;
-            background-color: #95a5a6; 
-        }
-
-            .more-info-btn-style {
-                margin: 6px 0 7px 0;
-                font-size: 0.9em;
-                color: #ffffff;
-                display: inline-block;
-                border-bottom: 1px dashed #ffffff; 
-            }
-        
-                .more-info-btn-style:hover {
-                    cursor: pointer;
-                }
-                
-                #hide_more_info_btn {
-                    display:none;
-                }
-        
-        .more-info-text-block {
-            margin: 30px 10px 30px 40px;
-            border-right: 1px #bdc3c7 dashed; 
-            width: 580px;
-            height: auto;
-            display: inline-block;
-            float: left;
-        }
-        
-            .more-info-text-block > h2 {
-                color: #333333;
-                margin: 0;
-                padding: 0 0 20px 0;
-            }
-            
-                .more-info-text-block > h2 > span {
-                    margin: 10px 0 0 0;
-                    display: inline-block;
-                    padding: 5px;
-                    background-color: #4e77ad;
-                    color: #fcf9f9;
-                    font-size: 0.8em;
-                }
-                
-            .more-info-text-block > h3 {
-                background-color: #4e77ad;
-                color: #fcf9f9;
-                padding: 5px;
-                margin: 0 0 20px 0;
-                display: inline-block;
-            }
-            
-            #lesson-plan-title {
-                width: 580px;
-                color: #333333;
-                display: inline-block;
-                text-align: center;
-            }
-
-            .more-info-text-block > p {
-                font-size: 0.9em;
-                width: 580px;
-                height: auto;
-                margin: 0;
-                padding: 0 30px 20px 0;
-                display: inline-block;
-                text-align: justify;
-            }
-            
-                .more-info-text-block > p > span {
-                    font-weight: bold;
-                }
-            
-            .list-of-material {
-                color: #333333;
-                font-size: 0.9em;
-                margin-top: 0; 
-            }
-            
-                .list-of-material > li > span {
-                    color: #000;
-                }
-            
-            #right_btn_hide {
-                position: relative;
-                float: right;
-                width: 62px;
-                height: auto;
-                background-color: #95a5a6;
-                color: #ffffff;
-                font-size: 0.9em;
-                display: inline-block;
-                text-align: center;
-                padding: 4px;
-            }    
-                
-            #right_btn_hide:hover {
-                cursor: pointer;
-            }
-            
-            #right_btn_hide > span {
-                border-bottom: 1px #ffffff dashed;
-            }
-            
-            .wrap-cource-gallery {
-                height: auto;
-                width: 320px;
-                display: inline-block;
-                margin: 240px 0 0 0;
-                text-align: center;
-            }
-            
-                .gallery-cource {
-                    width: 300px;
-                    height: 184px;
-                    margin: 0 0 110px 0;
-                    border: 5px solid #d7dde1;
-                }
-                
-                .gallery-cource:hover {
-                    cursor: pointer;
-                    opacity: 0.5;
-                }
-        
                                  BUY DOLL 
 
     .dolls-block {
