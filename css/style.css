@@ -75,7 +75,9 @@ and open the template in the editor.
 .glyph-icon {
   font-family: "melian-glyph-icon", sans-serif;
 }
+
 /* END */
+
 
 html {
   font-size:100%;
@@ -103,6 +105,25 @@ h2 {
   display: inline-block;
 }
 
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  height: 50px;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  border: none;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
 
 /* HEADER */
 
@@ -125,10 +146,12 @@ h2 {
   width: 83.3%;
   height: auto;
   color: #ffffff;
-  font-size:30px; font-size:3rem;
+  font-size:30px;
+  font-size:3rem;
 }
 
 /* END */
+
 
 /* TEACHER BLOCK */
 
@@ -196,7 +219,8 @@ h2 {
 
 .social-btns > a > span {
   display: inline-block;
-  font-size: 1.3em;
+  font-size: 13px;
+  font-size: 1.3rem;
   color: #fff;
   margin-top: 25%;
 }
@@ -204,7 +228,6 @@ h2 {
 #icon-vk {
   margin-right: 16%;
 }
-
 
 .block-carousel {
   display: inline-block;
@@ -219,6 +242,7 @@ h2 {
 
 /* END */
 
+
 /* COURSE BLOCK */
 
 .course-block {
@@ -231,12 +255,10 @@ h2 {
   margin: 0 auto;
 }
 
-
 .wrapp-course-block h2 {
   padding-top: 2%;
   color: #e6e6e6;
 }
-
 
 .photo-title {
   display: inline-block;
@@ -280,7 +302,6 @@ h2 {
   0 0 40px rgba(0, 0, 0, .1) inset;
 }
 
-
 .pos-form-enroll {
   padding: 6% 0 0 8.33%;
 }
@@ -304,26 +325,18 @@ h2 {
 }
 
 .form-enroll button {
-  width: 99%;
-  height: 50px;
-  border: none;
-  margin-top: 8%;
   font-size: 12px;
   font-size: 1.2rem;
   font-weight: 700;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 3px;
+  margin: 8% 0 0 0;
+  width: 99%;
   background: rgb(64,199,129);
   box-shadow: 0 -3px rgb(53,167,110) inset;
-  transition: 0.2s;
 }
 
 .form-enroll button:hover {
   background: rgb(53, 167, 110);
-  cursor: pointer;
 }
-
 
 .duration {
   display: inline-block;
@@ -333,7 +346,6 @@ h2 {
   color: aliceblue;
   text-shadow: 0.1em 0.1em 0.2em black;
 }
-
 
 .rght-col {
   margin-left: 16.66%;
@@ -408,8 +420,8 @@ h2 {
   color: #000;
 }
 
-
 /* END */
+
 
 /* BUY */
 
@@ -429,109 +441,80 @@ h2 {
 }
 
 .item-block1 > img, .item-block2 > img, .item-block3 > img {
-/*  border-radius: 4px;*/
-/*
-  padding: 5px;
-  border: 5px solid #333333;
-*/
+  width: 100%;
 }
 
 .section-buy {
   display: block;
-  width: 94.6%;
-/*  height: 100px;*/
+  width: 100%;
   padding: 4% 0 0 0;
-/*  background-color: #e4e7e8;*/
 }
 
 .name-doll {
   display: inline-block;
   font-size:14px;
   font-size:1.4rem;
-/*  padding: 0;*/
   width: 50%;
   color: #333333;
 }
 
 .cost {
   display: inline-block;
-  padding: 2% 0 0 0;
+  padding: 3% 0 0 0;
   width: 50%;
   color: #333333;
   text-align: left;
 }
 
 .btn-buy {
-  display: inline-block;
   font-size: 12px;
   font-size: 1.2rem;
   font-weight: 700;
-  text-decoration: none;
   margin: 2% 0 0 0;
   padding: 0 0 1% 0;
   width: 50%;
-  height: 50px;
-  color: #fff;
-  text-align: center;
   float: right;
   background: rgb(64,199,129);
-  border-radius: 3px;
   box-shadow: 0 -3px rgb(53,167,110) inset;
-  border: none;
-  transition: 0.2s;
 }
 
 .btn-buy:hover {
-  cursor: pointer;
-  -webkit-transition: 1s;
-  -moz-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
-/*  opacity: 0.5;*/
   background: rgb(6, 147, 74);
-
 }
-
-
-/*
-
-
 
  .btn-more-info {
-  display: block;
-  margin: 16px auto 0 auto;
-  padding: 0 0 2px 0;
-  width: 210px;
-  height: 35px;
-  text-align: center;
-  color: #ffffff;
-  background-color: #95a5a6;
-  border: none;
-  }
+  font-size: 10px;
+  font-size: 1rem;
+  margin: 8% 0 0 0;
+  padding: 0 0 1% 0;
+  width: 100%;
+  background: rgb(147, 149, 148);
+  box-shadow: 0 -3px #575555 inset;
+}
 
 .btn-more-info:hover {
-  cursor: pointer;
-  -webkit-transition: 1s;
-  -moz-transition: 1s;
-  -o-transition: 1s;
-  opacity: 0.5;
-  transition: 1s;
-}
-*/
-
-/*
-.item-block1 {
-  background-color: #d15b5b;
+  background: rgb(102, 103, 102);
 }
 
-.item-block2 {
-  background-color: #5bd17b;
+/* END */
+
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  height: 50px;
+  color: #333333;
+  margin: 40px 0 0 0;
+  text-align: center;
 }
 
-.item-block3 {
-  background-color: #5bb1d1;
+footer > span {
+  font-size: 10px;
+  font-size: 1rem;
+  padding: 25px 0 0 0 ;
+  display: inline-block;
 }
-*/
 
 /* END */
 
@@ -646,21 +629,7 @@ h2 {
 }
 
 
-
-/* END */
-
-
-
-/*body {
-    font-size: 1em;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Marmelad', sans-serif;
-    background-color: #333333;
-    background-image: url(../img/bg-1.jpg);
-    margin: 0;
-    overflow: auto;
-}
-
+/*
 #sub_layer {
     position: fixed;
     width: 100%;
@@ -740,137 +709,7 @@ h2 {
     height: auto;
 }
 
-                                 BUY DOLL 
 
-    .dolls-block {
-        width: 960px;
-        height: 500px;
-        background-color: #ffffff;
-        margin: 40px 0 0 0;
-    }
-    
-        .dolls-block > h2 {
-            width: 120px;
-            height: 38px;
-            background-color: #4e77ad;
-            margin: 0;
-            padding: 1px 0 1px 20px;
-            color: #fcf9f9;
-        }
-    
-        
-        .block-for-h2 {
-            width: 960px;
-            height: auto;
-            display: block;
-            background-color: #333333;
-        }
-        
-            .block-for-h2 > h2 {
-                width: 120px;
-                height: 38px;
-                background-color: #4e77ad;
-                margin: 0;
-                padding: 1px 0 1px 20px;
-                color: #fcf9f9;
-            }
-            
-        .group-goods {
-            background-image: url(../img/bg-block.png);
-            height: auto;
-        }
-        
-        .goods {
-            width: 320px;
-            float: left;
-            padding: 10px 0 10px 0;
-            margin: 10px 0 0 0;
-            background-color: #ffffff;
-        }
-        
-            .goods > img {
-                display: block;
-                width: 210px;
-                height: 285px;
-                margin: 20px auto 0 auto;
-                padding: 0;
-                border: 5px solid #333333;
-            }
-        
-        .section-buy {
-            display: block;
-            width: 210px;
-            margin: 10px auto 0 auto;
-        }
-        
-        
-            .name-doll {
-                display: inline-block;
-                font-size: 1.2em;
-                padding: 0;
-                width: 110px;
-                color: #333333;
-            }
-        
-            .cost {
-                display: inline-block;
-                padding: 2px 0 0 0;
-                width: 110px;
-                color: #333333;
-                text-align: left;
-            }
-        
-            .btn-buy {
-                display: inline-block;
-                margin: 2px 0 0 0;
-                padding: 0 0 2px 0;
-                width: 98px;
-                height: 45px;
-                color: #333333;
-                text-align: center;
-                float: right;
-                font-size: 1.1em;
-                color: #ffffff;
-                background-color: #4e77ad;
-                border: none;
-            }
-        
-                .btn-buy:hover {
-                    cursor: pointer;
-                    -webkit-transition: 1s;
-                    -moz-transition: 1s;
-                    -o-transition: 1s;
-                    transition: 1s;
-                    opacity: 0.5;
-                }
-        
-        .btn-more-info {
-            display: block;
-            margin: 16px auto 0 auto;
-            padding: 0 0 2px 0;
-            width: 210px;
-            height: 35px;
-            text-align: center;
-            color: #ffffff;
-            background-color: #95a5a6;
-            border: none;
-        }
-        
-            .btn-more-info:hover {
-                cursor: pointer;
-                -webkit-transition: 1s;
-                -moz-transition: 1s;
-                -o-transition: 1s;
-                opacity: 0.5;
-                transition: 1s;
-            }
-            
-        #div_with_border {
-            border-left: 1px dashed #bdc3c7;
-            border-right: 1px dashed #bdc3c7;
-        }
-
-        
                          MORE INFO ABOUT DOLL 
 
         .pos-more-info {
@@ -993,20 +832,4 @@ h2 {
         display: none;
     }
     
-                                     FOOTER 
-
-    footer {
-        width: 960px;
-        height: 50px;
-        color: #ffffff;
-        background-color: #4e77ad;
-        margin: 40px auto 0 auto;
-        text-align: center;
-    }
-    
-        footer > span {
-            font-size: 0.9em;
-            padding: 25px 5px 0 0 ;
-            display: inline-block;
-            text-shadow: 0.1em 0.1em 0.2em black; 
-        }*/
+*/
