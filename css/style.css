@@ -182,12 +182,16 @@ h2 {
   display: inline-block;
   margin: 0 0 2% 0;
   font-style: italic;
+  font-size: 9px;
+  font-size: 0.9rem;
 }
 
 #teachers-email {
   display: inline-block;
   margin: 0 0 4% 0;
   font-style: italic;
+  font-size: 9px;
+  font-size: 0.9rem;
 }
 
 .social-btns {
@@ -532,16 +536,17 @@ footer > span {
 
 /* END */
 
-@media only screen and (min-width: 641px) and (max-width: 1000px) {
+@media only screen and (min-width: 801px) and (max-width: 1000px) {
 
 /* HEADER */
 
 .melian-studio-block > span {
-  font-size:14px;
-  font-size:1.4rem;
+  font-size:30px;
+  font-size:3rem;
 }
 
 /* END */
+
 
 /* TEACHER BLOCK */
 
@@ -557,14 +562,14 @@ footer > span {
 
 #teachers-city {
   margin: 0;
-  font-size: 10px;
-  font-size: 1rem;
+  font-size: 9px;
+  font-size: 0.9rem;
 }
 
 #teachers-email {
   margin: 0 0 2% 0;
-  font-size: 10px;
-  font-size: 1rem;
+  font-size: 9px;
+  font-size: 0.9rem;
 }
 
 .social-btns > a {
@@ -574,6 +579,165 @@ footer > span {
 
 .social-btns > a > span {
   font-size: 1.3em;
+}
+
+/* END */
+
+
+/* COURCE BLOCK */
+
+#price-cource {
+  font-size: 16px;
+  font-size: 1.6rem;
+  padding: 1%;
+  margin-top: 6%;
+}
+
+#short-description {
+  font-size: 10px;
+  font-size: 1rem;
+}
+
+.form-enroll input {
+  height: 40px;
+  font-size: 9px;
+  font-size: 0.9rem;
+}
+
+.form-enroll button {
+  font-size: 11px;
+  font-size: 1.1rem;
+}
+
+.description-lesson {
+  font-size: 8px;
+  font-size: 0.8rem;
+}
+
+/* END */
+
+
+/* BUY BLOCK */
+
+.name-doll {
+  font-size:11px;
+  font-size:1.1rem;
+  width: 40%;
+}
+
+.cost {
+  font-size: 8px;
+  font-size: 0.8rem;
+  width: 40%;
+}
+
+.btn-buy {
+  font-size: 10px;
+  font-size: 1rem;
+}
+
+ .btn-more-info {
+  font-size: 9px;
+  font-size: 0.9rem;
+}
+
+/* END */
+
+}
+
+@media only screen and (min-width: 641px) and (max-width: 800px) {
+
+/* HEADER */
+
+.melian-studio-block > span {
+  font-size:24px;
+  font-size:2.4rem;
+}
+
+/* END */
+
+
+/* TEACHER BLOCK */
+
+#teachers-city {
+  margin: 0;
+  font-size: 7px;
+  font-size: 0.7rem;
+}
+
+#teachers-email {
+  margin: 0 0 2% 0;
+  font-size: 7px;
+  font-size: 0.7rem;
+}
+
+.social-btns > a {
+  width: 2em;
+  height: 2em;
+}
+
+.social-btns > a > span {
+  font-size: 0.9em;
+}
+
+/* END */
+
+
+/* COURCE BLOCK */
+
+#price-cource {
+  font-size: 14px;
+  font-size: 1.4rem;
+  padding: 1%;
+  margin-top: 6%;
+}
+
+#short-description {
+  font-size: 8px;
+  font-size: 0.8rem;
+}
+
+.form-enroll input {
+  height: 40px;
+  font-size: 8px;
+  font-size: 0.8rem;
+}
+
+.form-enroll button {
+  font-size: 10px;
+  font-size: 1rem;
+}
+
+.description-lesson {
+  font-size: 8px;
+  font-size: 0.8rem;
+}
+
+/* END */
+
+
+/* BUY BLOCK */
+
+.name-doll {
+  font-size:10px;
+  font-size:1rem;
+  width: 40%;
+}
+
+.cost {
+  font-size: 7px;
+  font-size: 0.7rem;
+  width: 40%;
+}
+
+.btn-buy {
+  font-size: 10px;
+  font-size: 1rem;
+}
+
+ .btn-more-info {
+  font-size: 9px;
+  font-size: 0.9rem;
 }
 
 /* END */
@@ -609,7 +773,7 @@ h2 {
 
 .teacher {
   width: 80%;
-  margin: 8% 0 8% 9%;
+  margin: 0 0 0 9%;
 }
 
 #teacher-pic {
@@ -751,7 +915,6 @@ footer > span {
 
 /* END */
 
-
 }
 
 
@@ -774,11 +937,9 @@ h2 {
 /* HEADER */
 
 .melian-studio-block > span {
-  font-size:9px;
-  font-size:0.9rem;
+  font-size:14px;
+  font-size:1.4rem;
 }
-
-/* END */
 
 
 /* TEACHER BLOCK */
@@ -792,19 +953,19 @@ h2 {
 #teacher-name {
   font-size: 11px;
   font-size: 1.1rem;
-  margin: 4% 0 10% 0;
+  margin: 4% 0 5% 0;
 }
 
 #teachers-city {
   margin: 0;
-  font-size: 6px;
-  font-size: 0.6rem;
+  font-size: 8px;
+  font-size: 0.8rem;
 }
 
 #teachers-email {
   margin: 0 0 2% 0;
-  font-size: 6px;
-  font-size: 0.6rem;
+  font-size: 8px;
+  font-size: 0.8rem;
 }
 
 .block-carousel {
