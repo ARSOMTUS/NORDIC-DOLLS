@@ -265,28 +265,12 @@ h2 {
 
 .course-block {
   height: auto;
-
-  background-image: url(../img/bg-5.jpg);
-  background-repeat: no-repeat;
-
-/*
-background: rgb(31,49,51);
-background: -moz-linear-gradient(top, rgba(31,49,51,1) 0%, rgba(29,31,26,1) 64%, rgba(29,31,26,1) 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(31,49,51,1)), color-stop(64%,rgba(29,31,26,1)), color-stop(100%,rgba(29,31,26,1)));
-background: -webkit-linear-gradient(top, rgba(31,49,51,1) 0%,rgba(29,31,26,1) 64%,rgba(29,31,26,1) 100%);
-background: -o-linear-gradient(top, rgba(31,49,51,1) 0%,rgba(29,31,26,1) 64%,rgba(29,31,26,1) 100%);
-background: -ms-linear-gradient(top, rgba(31,49,51,1) 0%,rgba(29,31,26,1) 64%,rgba(29,31,26,1) 100%);
-background: linear-gradient(to bottom, rgba(31,49,51,1) 0%,rgba(29,31,26,1) 64%,rgba(29,31,26,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f3133', endColorstr='#1d1f1a',GradientType=0 );
-*/
-
+  background: url(../img/bg_for_course_block.jpg) no-repeat, url(../img/bg_for_course_block_2.jpg);
 }
 
 .wrapp-course-block {
   width: 91.63%;
   margin: 0 auto;
-
-
 }
 
 .wrapp-course-block h2 {
@@ -304,7 +288,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f3133', end
 }
 
 #short-description {
-/*  background-color: #e74c3c;*/
   background-color: #ed7668;
   border-radius: 13em 0.5em/1em 0.5em;
   width: 94%;
@@ -406,7 +389,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f3133', end
   font-size: 13px;
   font-size: 1.3rem;
   border-radius: 3px 3px 0 0;
-/*  background-color: #3498db;*/
   background-color: #498091;
   color: #fff;
 }
