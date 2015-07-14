@@ -361,7 +361,6 @@ h2 {
 .duration {
   display: inline-block;
   padding: 15px;
-/*  background-color: #3498db;*/
   background-color: #498091;
   border-radius: 13em 0.5em/1em 0.5em;
   color: aliceblue;
@@ -461,7 +460,8 @@ h2 {
 }
 
 .item-block1 > img, .item-block2 > img, .item-block3 > img {
-  width: 100%;
+  width: 96.5%;
+  border: 5px solid #333333;
 }
 
 .section-buy {
