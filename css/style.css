@@ -460,8 +460,9 @@ h2 {
 }
 
 .item-block1 > img, .item-block2 > img, .item-block3 > img {
-  width: 96.5%;
+  width: 100%;
   border: 5px solid #333333;
+  box-sizing: border-box;
 }
 
 .section-buy {
