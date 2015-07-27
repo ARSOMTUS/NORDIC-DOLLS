@@ -40,17 +40,66 @@ $(window).load(function() {
             arrOfToggles.push(tempObjToggle);
         });
 
-        var outputArrInConsole = function() {
-            console.log(arrOfToggles);
+//        $(arrOfToggles).each().click( clickOnToggle );
+
+        var clickOnToggle = function () {
+            alert("The toggle is clicked!");
         };
 
+        $(arrOfToggles).each( function(){
+            $(arrOfToggles).click( function() {
+                clickOnToggle();
+            });
+        });
+
+//        $.each(arrOfToggles, function(){
+//            var tempId = $(this).attr("id");
+//            $("#" + tempId).click(function (){
+//                clickOnToggle();
+////            //'Toggle ' + $(arrOfToggles).attr("id") + 'is clicked!'
+//            });
+//        });
+
+        //            var tempId = $(this).attr("id");
+////            console.log(tempId);
+//            $("#" + tempId).click(function (){
+//                alert("Is clicked!");
+//            //'Toggle ' + $(arrOfToggles).attr("id") + 'is clicked!'
+//            });
+//        });
+
+//        $('#toggle_1').click(function (){
+//            alert("Is clicked!");
+//            //'Toggle ' + $(arrOfToggles).attr("id") + 'is clicked!'
+//        });
+
+
+
+//        var outputArrInConsole = function() {
+//            console.log(arrOfToggles);
+//        };
+//
+
+
+
+//        var clickOnToggle = $.each(arrOfToggles, function(){
+//            $(this).click(function (){
+//                alert("Is clicked!");
+//            //'Toggle ' + $(arrOfToggles).attr("id") + 'is clicked!'
+//            });
+//        });
+
         return {
-            outputArrInConsole: outputArrInConsole
+            clickOnToggle: clickOnToggle
+//            outputArrInConsole: outputArrInConsole,
+//            clickOnToggle: clickOnToggle
         };
 
     })();
 
     /* END */
 
-    manageLessonBlock.outputArrInConsole();
+//    manageLessonBlock.outputArrInConsole();
+//    manageLessonBlock.clickOnToggle();
+
 });
