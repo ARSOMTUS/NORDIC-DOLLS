@@ -40,66 +40,25 @@ $(window).load(function() {
             arrOfToggles.push(tempObjToggle);
         });
 
-//        $(arrOfToggles).each().click( clickOnToggle );
-
-        var clickOnToggle = function () {
-            alert("The toggle is clicked!");
+        var isClicked = function(){
+            alert("The toggle was clicked.");
         };
 
-        $(arrOfToggles).each( function(){
-            $(arrOfToggles).click( function() {
-                clickOnToggle();
+        var setToggleClickHandler = function(){
+            $.each(arrOfToggles, function(){
+                $( "#" + $(this).attr("id") ).on("click", function(){
+                    isClicked();
+                });
             });
-        });
-
-//        $.each(arrOfToggles, function(){
-//            var tempId = $(this).attr("id");
-//            $("#" + tempId).click(function (){
-//                clickOnToggle();
-////            //'Toggle ' + $(arrOfToggles).attr("id") + 'is clicked!'
-//            });
-//        });
-
-        //            var tempId = $(this).attr("id");
-////            console.log(tempId);
-//            $("#" + tempId).click(function (){
-//                alert("Is clicked!");
-//            //'Toggle ' + $(arrOfToggles).attr("id") + 'is clicked!'
-//            });
-//        });
-
-//        $('#toggle_1').click(function (){
-//            alert("Is clicked!");
-//            //'Toggle ' + $(arrOfToggles).attr("id") + 'is clicked!'
-//        });
-
-
-
-//        var outputArrInConsole = function() {
-//            console.log(arrOfToggles);
-//        };
-//
-
-
-
-//        var clickOnToggle = $.each(arrOfToggles, function(){
-//            $(this).click(function (){
-//                alert("Is clicked!");
-//            //'Toggle ' + $(arrOfToggles).attr("id") + 'is clicked!'
-//            });
-//        });
-
-        return {
-            clickOnToggle: clickOnToggle
-//            outputArrInConsole: outputArrInConsole,
-//            clickOnToggle: clickOnToggle
         };
+
+        setToggleClickHandler();
+
+//        return {
+//        };
 
     })();
 
     /* END */
-
-//    manageLessonBlock.outputArrInConsole();
-//    manageLessonBlock.clickOnToggle();
 
 });
