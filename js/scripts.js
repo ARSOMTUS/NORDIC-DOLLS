@@ -20,40 +20,39 @@ $(window).load(function() {
     //TODO
     //Don't forget use method addClass(), closest()
 
-    var manageLessonBlock = (function() {
-        var arrOfToggles = [];
-        var foundToggles = $(".icon-down-open");
+    var manageLessonBlock = (function(){
+        var arrOfLessons = $(".cource-lesson");
         //Constant property for Toggle.
-        var CLASS_OF_DESCRIPTION = "description-lesson";
-        var CLASS_OF_HEADER =  "header-lesson";
-        var CLASS_OF_OPEN_TOGGLE = "icon-up-open";
-        var CLASS_OF_CLOSE_TOGGLE = "icon-down-open";
-
-
-        $.each(foundToggles, function(){
-            //Constructor for new Toggle
-            function Toggle(idIn) {
-                this.id = idIn;
-                this.flag = 0;
-            }
-            var tempObjToggle = new Toggle( $(this).attr("id") )
-            arrOfToggles.push(tempObjToggle);
-        });
+        //var ATTR_CLASS_OF_DESCRIPTION = "description-lesson";
+        //var ATTR_CLASS_OF_HEADER =  "header-lesson";
+        //var ATTR_CLASS_OF_OPEN_TOGGLE = "icon-up-open";
+        //var ATTR_CLASS_OF_CLOSE_TOGGLE = "icon-down-open";
 
         var isClicked = function(){
-            alert("The toggle was clicked.");
+            alert("The toggle was clicked!");
         };
 
-        var setToggleClickHandler = function(){
-            $.each(arrOfToggles, function(){
-                $( "#" + $(this).attr("id") ).on("click", function(){
+//        var isClickedTwice = function(){
+//            alert("The toggle was clicked twice!");
+//        };
+//
+//        var addAttrFlagToToggle = function(){
+//            $.each(arrOfToggles, function(){
+//                $(this).attr("flag", "0");
+//            });
+//        };
+
+
+        var setHandlerClickOnToggle = function(){
+            $.each(arrOfLessons, function(){
+                $( "#" + $(this).attr("id") ).find(".icon-down-open").click(function() {
                     isClicked();
                 });
             });
         };
 
-        setToggleClickHandler();
-
+//        addAttrFlagToToggle();
+        setHandlerClickOnToggle();
 //        return {
 //        };
 
