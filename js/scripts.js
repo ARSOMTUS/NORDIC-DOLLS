@@ -39,17 +39,36 @@ $(window).load(function() {
         };
 
         var setHandlerClickOnToggle = function() {
-            $( this ).find( ".icon-down-open" ).click(function() {
-                $.each( arrOfLessons, function() {
-                    if ( $( this ).attr( "flag" ) === "0" ) {
-                        isClicked();
+            $.each( arrOfLessons, function() {
+//                var tempId = $( this ).attr( "id" ); "#" + tempId
+//                var tempId = $( this ).attr( "id" );
+//                alert( $( "#" + tempId ).attr( "flag" ) );
+                $( this ).find( ".icon-down-open" ).click(function() {
+                    var tempId = $( this ).attr( "id" );
+                    alert(tempId);
+                    //this context ???
+//                    var flag = $( "#lesson_1" ).attr( "flag" );
+//                    alert(flag);
+                    if ( $( this ).attr( "flag" ) === 0 ) {
                         $( this ).attr( "flag" , "1" );
+                        isClicked();
                     } else {
                         isClickedTwice();
                         $( this ).attr( "flag" , "0" );
                     }
                 });
             });
+//            $( this ).find( ".icon-down-open" ).click(function() {
+//                $.each( arrOfLessons, function() {
+//                    if ( $( this ).attr( "flag" ) === "0" ) {
+//                        isClicked();
+//                        $( this ).attr( "flag" , "1" );
+//                    } else {
+//                        isClickedTwice();
+//                        $( this ).attr( "flag" , "0" );
+//                    }
+//                });
+//            });
         };
 
         addAttrFlag();
